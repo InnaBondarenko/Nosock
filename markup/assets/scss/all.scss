@@ -1,4 +1,17 @@
 @import 'modules/variables';
 @import 'modules/grid';
+@import 'modules/type';
 
 
+
+@font-face {
+    font-family: 'Microsoft PhagsPa';
+    src: url('../fonts/Microsoft PhagsPa.ttf');
+    src: url('../fonts/Microsoft PhagsPa.eot');
+    src: url('../fonts/Microsoft PhagsPa.otf');
+    src: url('../fonts/Microsoft PhagsPa.woff');
+    src: url('../fonts/Microsoft PhagsPa.woff2');
+
+    font-weight: normal;
+    font-style: normal;
+}
