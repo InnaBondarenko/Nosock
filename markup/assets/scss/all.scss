@@ -5,6 +5,8 @@
 @import 'modules/icons/style';
 @import 'modules/navigation';
 @import 'modules/lists';
+@import 'modules/counter';
+
 
 
 @font-face {
@@ -20,11 +22,11 @@
 }
 // .pp{
 // 	position: absolute;
-// 	top: 0px;
+// 	top:0px;
 // 	opacity: 0.5;
 // 	left: 50%;
-// 	-webkit-transform: translateX(-50%);
-// 	        transform: translateX(-50%);
+// 	// -webkit-transform: translateX(-50%);
+// 	//         transform: translateX(-50%);
 // 	pointer-events: none;
 // 	z-index: 999;
 // }
