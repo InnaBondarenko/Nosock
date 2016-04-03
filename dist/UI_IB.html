@@ -4,15 +4,42 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Shophia</title>
-	<link media="all" rel="stylesheet" href="assets/fonts/Microsoft PhagsPa.otf">
+	<title>Nosock</title>
 	<link media="all" rel="stylesheet" href="assets/css/all.css">
 </head>
-	<body>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="#"><span class="logo icon-logo"></span></a>
+			<nav class="main-nav">
+				<button class="opener opener-x">
+					<span>opener</span>
+				</button>
+				<ul class="nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Store</a></li>
+					<li><a href="#">Lookbook</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, sed.</p>
 	<span class="icon icon-heart"></span>
 	<span class="icon-logo"></span>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="assets/js/open-menu.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".opener").click(function(){
+				$("#open-menu").toggle();
+			});
+		});
+	</script>
 <!-- 	// <script src="assets/js/assets.js"></script> -->
 </body>
 </html>

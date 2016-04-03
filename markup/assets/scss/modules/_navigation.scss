@@ -1,0 +1,89 @@
+.main-nav{
+
+}
+.nav{
+
+}
+
+
+
+.opener{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 41px;
+	height: 37px;
+	font-size: 0;
+	text-indent: -9999px;
+	box-shadow: none;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s;
+	top: 0;
+	right: 0px;
+}
+.opener:focus{
+	outline: none;
+}
+.opener span{
+	display: block;
+	position: absolute;
+	top: 17px;
+	left: 14px;
+	right: 12px;
+	height: 2px;
+	background: white;
+}
+.opener span:before,
+.opener span:after{
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	content: '';
+}
+.opener span:before{
+	top: -4px;
+}
+.opener span:after{
+	bottom: -4px;
+}
+.opener-x{
+	background-color: #202529;
+}
+.opener-x span{
+	transition: background 0s 0.3s;
+}
+.opener-x span:before,
+.opener-x span:after{
+	transition-duration: 0.3s, 0.3s;
+	transition-delay: 0.3s, 0s;
+}
+.opener-x span:before{
+	transition-property: top, transform;
+}
+.opener-x span:after{
+	transition-property: bottom, transform;
+}
+.opener-x.active{
+	background-color: #202529;
+}
+.opener-x.active span{
+	background: none;
+}
+.opener-x.active span:before{
+	top: 0;
+	transform: rotate(45deg);
+}
+.opener-x.active span:after{
+	bottom: 0;
+	transform: rotate(-45deg);
+}
+.opener-x.active span:before,
+.opener-x.active span:after{
+	transition-delay: 0s, 0.3s;
+}
