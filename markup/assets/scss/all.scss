@@ -3,11 +3,9 @@
 @import 'modules/reset';
 @import 'modules/type';
 @import 'modules/icons/style';
-<<<<<<< HEAD
 @import 'modules/navigation';
-=======
 @import 'modules/lists';
->>>>>>> 42eccde28a31b91d92cede3d6d513e1dd79e78c7
+
 
 @font-face {
     font-family: 'Microsoft PhagsPa';
@@ -20,13 +18,13 @@
     font-weight: normal;
     font-style: normal;
 }
-// .pp{
-// 	position: absolute;
-// 	top: 65px;
-// 	opacity: 0.5;
-// 	left: 50%;
-// 	-webkit-transform: translateX(-50%);
-// 	        transform: translateX(-50%);
-// 	pointer-events: none;
-// 	z-index: 999;
-// }
+.pp{
+	position: absolute;
+	top: 0px;
+	opacity: 0.5;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	pointer-events: none;
+	z-index: 999;
+}

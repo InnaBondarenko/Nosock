@@ -2,7 +2,7 @@
 
   "use strict";
 
-  var toggles = document.querySelectorAll(".opener");
+  var toggles = document.querySelectorAll(".opener-menu");
 
   for (var i = toggles.length - 1; i >= 0; i--) {
     var toggle = toggles[i];
