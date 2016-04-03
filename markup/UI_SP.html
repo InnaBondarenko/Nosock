@@ -4,13 +4,112 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Shophia</title>
+	<title>Nosock</title>
 	<link media="all" rel="stylesheet" href="assets/css/all.css">
 </head>
 	<body>
-
+		<div class="container">
+			<ul class="list list-social test">
+				<li>
+					<a href="#"><i class="icon-social-facebook"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="icon-google"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="icon-twitter"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="icon-instagram"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="icon-pinterest"></i></a>
+				</li>
+			</ul>
+			<ul class="list list-icons">
+				<li>
+					<a href=""><i class="icon-heart"></i></a>
+				</li>
+				<li>
+					<a href=""><i class="icon-cart"></i></a>
+				</li>
+			</ul>
+			<ul class="list list-icons list-icons-horizontal">
+				<li>
+					<a href=""><i class="icon-heart"></i></a>
+				</li>
+				<li>
+					<a href=""><i class="icon-cart"></i></a>
+				</li>
+			</ul>
+			<ul class="list list-filter">
+				<li class="h4 opener">
+					<a href="#">Men</a>
+					<ul>
+						<li>
+							<a href="#">ankle</a>
+						</li>
+						<li>
+							<a href="#">crew</a>
+						</li>
+						<li>
+							<a href="#">knee</a>
+						</li>
+					</ul>
+				</li>
+				<li class="h4 opener">
+					<a href="#">Woomen</a>
+					<ul>
+						<li>
+							<a href="#" class="active">ankle</a>
+						</li>
+						<li>
+							<a href="#">crew</a>
+						</li>
+						<li>
+							<a href="#">knee</a>
+						</li>
+						<li>
+							<a href="#">over the knee</a>
+						</li>
+					</ul>
+				</li>
+				<li class="h4 opener">
+					<a href="#">Kids</a>
+					<ul>
+						<li>
+							<a href="#">crew</a>
+						</li>
+						<li>
+							<a href="#">knee</a>
+						</li>
+						<li>
+							<a href="#">over the knee</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="list list-color">
+				<li class="yellow">
+					<a href="#"></a>
+				</li>
+				<li class="red">
+					<a href="#"></a>
+				</li>
+				<li class="blue">
+					<a href="#"></a>
+				</li>
+			</ul>
+		</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	// <script src="assets/js/assets.js"></script>
+	<script>
+		$(function(){
+		$('.opener').on('click', function () {
+			 $(this).toggleClass('open')
+		})
+	});
+	</script>
+	<!-- // <script src="assets/js/assets.js"></script> -->
 </body>
 </html>
