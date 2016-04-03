@@ -1,0 +1,169 @@
+$icon-social-font-size:     16px;
+$list-bg-sm-screen:         #ebebeb;
+.test{
+	background: $brand-color;
+}
+.list{
+	display: flex;
+	li{
+		a{
+			display: inline-block;
+			&:hover{
+				text-decoration: none;
+			}
+			[class*="icon-"]{
+				font-size: $icon-social-font-size;
+			}
+		}
+	}
+	&-social{
+		li{
+			&:last-child{
+				a{
+					margin-right: 0;
+				}
+			}
+			a{
+				margin-right: 17px;
+				padding: 2px 6px;
+				border-radius: 50%;
+				[class*="icon-"]{
+					color: $text-inverse-color;
+				}
+				&:hover{
+					background: $body-bg;
+					[class*="icon-"]{
+						color: $text-color;
+					}
+				}
+			}
+		}
+	}
+	&-icons{
+		li{
+			a{
+				margin-right: 27px;
+			}
+		}
+		&-horizontal{
+			flex-direction: column;
+			align-items: center;
+			li{
+				a{
+					margin-right: 0;
+					margin-bottom: 15px;
+				}				
+			}
+		}
+	}
+	&-filter{
+		justify-content: space-around;
+		background: $list-bg-sm-screen;
+		margin: 0 -15px;
+		position: relative;
+		li{
+			margin: 0;
+			a{
+				padding: 20px;
+				color: rgba($brand-color, .66);
+			}
+		}
+		.opener{
+			ul{
+				display: none;
+			}
+			&.open{
+				a{
+					color: $brand-color;
+				}
+				ul{
+					display: block;
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 100%;
+					background: $list-bg-sm-screen;
+					li{
+						margin-bottom: 8px;
+						text-align: center;
+						a{
+							font-weight: 400;
+							&:hover,
+							&.active{
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+			}		
+		}
+		@media screen and (min-width: 768px){
+			flex-direction: column;
+			background: transparent;
+			margin: 0;
+			li{
+				a{
+					padding: 0;
+					color: $brand-color;
+				}
+			}
+			.opener{
+				margin-bottom: 46px;
+				ul{
+					display: none;
+				}
+				&.open{
+					ul{
+						position: static;
+						display: block;
+						margin-top: 10px;
+						background: transparent;
+						li{
+							margin-bottom: 8px;
+							text-align: left;
+							a{
+							
+							}
+						}
+					}
+				}		
+			}
+		}
+	}
+	&-color{
+		li{
+			margin-right: 7px;
+			@media screen and (min-width: 768px){
+				margin-right: 2px;
+			}
+			a{
+				height: 40px;
+				width: 40px;
+				&:hover,
+				&.active{
+					box-shadow: 0 0 0 1px $brand-color;
+				}	
+			}
+			
+			&:last-child{
+				margin-right: 0;
+			}
+
+			&.yellow{
+				a{
+					background: #f2f1bb;
+				}
+			}
+			&.red{
+				a{
+					background: #f2cbcd;	
+				}
+			}
+			&.blue{
+				a{
+					background: #d2ebef;
+				}
+			}
+		}
+	}
+}
