@@ -38,7 +38,6 @@
 	@media screen and (min-width: 768px){
 		flex-direction: column;
 		align-items: center;
-		max-height: 390px;
 		.price{
 			font-size: 30px;
 			bottom: 19%;
@@ -52,7 +51,7 @@
 				left: 0;
 				right: 0;
 				transform: translateX(-100%);
-				transition: all 1s;
+				transition: transform 1s;
 			}
 		&:after{
 			content: "";
@@ -62,18 +61,20 @@
 			top: 0;
 			right: 0;
 			transform: translateY(100%);
-			transition: all 1s;
-			transition-delay: 1s;
+			transition: transform  1s;
+			transition-delay: 0s;
 		}
 		.product-caption{
 			transform: translateX(300%);
 			align-self: flex-end;
 			text-align: right;
 			transition: transform 1s;
+			position: absolute;
+			bottom: 0;
+			right: 0;
 			margin: 0 40px 12px 0;
 			h3{
-				margin-bottom: -5px;
-				
+				margin-bottom: -5px;	
 				font-size: $font-size-h3;
 			}
 			p{
@@ -87,9 +88,9 @@
 		.image-holder{
 			margin-top: 0;
 			position: relative;
+			padding-top: 44px;
 			img{
 				margin-left: -39px;
-				margin-top: 41px;
 			}
 		}
 		&:hover{
@@ -98,6 +99,7 @@
 			}
 			&:after{
 				transform: translateY(0);
+				transition-delay: 1s;
 			}
 			.wish{
 				display: block;
@@ -108,9 +110,9 @@
 				z-index: 10;
 			}
 			.image-holder{
-				margin-bottom: -44px;
+				padding-bottom: 44px;
 				img{
-					margin: 0;
+					margin:-44px 0 0 0;
 				}
 			}
 			.product-caption{
@@ -118,10 +120,81 @@
 			}
 		}
 	}
-	// @media screen and (min-width: 960px){
-	// 	height: 310px;
-	// }
-	// @media screen and (min-width: 1420px){
-	// 	height: 390px;
-	// }
+	&-sm{
+		margin-bottom: 0;
+		padding: 10px 0;
+	 	.price{
+	 		font-size: 20px;
+	 		bottom: 39%;
+	 		left: -16px;
+	 		@media screen and (min-width: 960px){
+	 			font-size: 20px;
+	 		}
+	 	}
+	 	.image-holder{
+	 		width: 100%;
+	 		padding: 0;
+	 		margin: 0;
+	 		@media screen and (min-width: 960px){
+	 			width: 75%;
+	 			margin: 0 auto;
+	 			img{
+	 				margin: 0 0 0 -37px;
+	 			}
+	 		}
+ 			
+ 		}
+	 	.product-caption{
+	 		display: none;
+	 	}
+	 	&:hover{
+	 		.image-holder{
+	 			margin: 0;
+	 			padding: 0;
+	 			@media screen and (min-width: 960px){
+					img{
+		 				margin: 0 0 0 -37px;
+		 			}
+	 			}
+	 		}
+			&:before,
+			&:after{
+				display: none;
+			}
+	 		.product-caption{
+		 		display: flex;
+		 		flex-direction: column;
+		 		justify-content: space-between;
+		 		position: absolute;
+		 		top: 0;
+		 		bottom: 0;
+		 		left: 0;
+		 		right: 0;
+		 		margin: 0;
+		 		align-items: flex-start;
+		 		h3{
+		 			font-size: 16px;
+		 			margin-top: 0;
+		 		}
+		 		p{
+		 			font-size: 13px;
+		 			margin-bottom: 6px;
+		 			margin-left: 9px;
+		 		}
+		 		.list-icons{
+		 			align-self: flex-end;
+					margin-right: 10px;
+					margin-top: 8px;
+					@media screen and (min-width: 1400px){
+						margin-right: 65px;
+					}
+		 		}
+		 		@media screen and (min-width: 768px){
+					.list-icons{
+						display: block;
+					}
+		 		}
+		 	}
+	 	}
+ 	}
 }

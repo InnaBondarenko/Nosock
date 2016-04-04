@@ -5,6 +5,7 @@ $icon-social-font-size-sm:     20px;
 .test{
 	background: $brand-color;
 }
+
 .list{
 	display: flex;
 	li{
@@ -54,10 +55,25 @@ $icon-social-font-size-sm:     20px;
 			flex-direction: column;
 			align-items: center;
 			li{
+				text-align: center;
+				&:first-child{
+					a{
+						margin-bottom: 28px;
+					}	
+				}
 				a{
 					margin-right: 0;
-					margin-bottom: 15px;
+					margin-bottom: 0;
 				}				
+			}
+		}
+		&-sm{
+			li{
+				a{
+					[class*="icon-"]{
+						font-size: $icon-social-font-size-sm;
+					}
+				}
 			}
 		}
 	}

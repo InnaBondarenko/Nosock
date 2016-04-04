@@ -7,7 +7,7 @@
 @import 'modules/lists';
 @import 'modules/product-card';
 @import 'modules/counter';
-
+@import 'modules/block-options';
 
 
 @font-face {
@@ -23,7 +23,7 @@
 }
 .pp{
 	position: absolute;
-	top: -345px;
+	top: -1201px;
 	opacity: 0.5;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
