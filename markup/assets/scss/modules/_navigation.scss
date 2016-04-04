@@ -21,9 +21,15 @@ $opener-color: #1d1d1b;
 			margin-bottom: 25px;
 			margin-left: 65px;
 			@media screen and (min-width: 769px){
-				width: 17%;
+				width: 19%;
 				margin-bottom: 0;
 				margin-left: 0;
+			}
+			@media screen and (min-width: 992px){
+				width: 17%;
+			}
+			@media screen and (min-width: 992px){
+				width: 16%;
 			}
 		}
 		&-center{
@@ -38,11 +44,18 @@ $opener-color: #1d1d1b;
 	.logo{
 		display: none;
 		font-size: 56px;
+		font-size: 40px;
 		&:hover{
 			text-decoration: none;
 		}
 		@media screen and (min-width: 768px){
 			display: block;
+		}
+		@media screen and (min-width: 992px){
+			font-size: 50px;
+		}
+		@media screen and (min-width: 1024px){
+			font-size: 56px;
 		}
 	}
 	.list{
@@ -141,7 +154,6 @@ $opener-color: #1d1d1b;
 			display: none;
 		}
 	}
-	
 }
 .nav{
 	display: none;
@@ -162,8 +174,31 @@ $opener-color: #1d1d1b;
 	@media screen and (min-width: 769px){
 		display: flex;
 		text-align: justify;
-		font-size: 24px;
+		font-size: 18px;
 		padding: 0;
+		> li{
+			> a{
+				padding: 0 35px;
+				padding: 0 11px;
+			}
+		}
+	}
+	@media screen and (min-width: 992px){
+		font-size: 24px;
+		> li{
+			> a{
+				padding: 0 20px;
+			}
+		}
+	}
+	@media screen and (min-width: 1024px){
+		> li{
+			> a{
+				padding: 0 24px;
+			}
+		}
+	}
+	@media screen and (min-width: 1200px){
 		> li{
 			> a{
 				padding: 0 35px;
