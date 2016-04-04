@@ -97,7 +97,7 @@ $list-bg-sm-screen:         #ebebeb;
 				}
 			}		
 		}
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 960px){
 			flex-direction: column;
 			background: transparent;
 			margin: 0;
@@ -108,7 +108,7 @@ $list-bg-sm-screen:         #ebebeb;
 				}
 			}
 			.opener{
-				margin-bottom: 46px;
+				margin-bottom: 55px;
 				ul{
 					display: none;
 				}
@@ -118,6 +118,7 @@ $list-bg-sm-screen:         #ebebeb;
 						display: block;
 						margin-top: 10px;
 						background: transparent;
+						margin-bottom: -17px;
 						li{
 							margin-bottom: 8px;
 							text-align: left;
