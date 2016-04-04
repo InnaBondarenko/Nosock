@@ -4,15 +4,72 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Shophia</title>
-	<link media="all" rel="stylesheet" href="assets/fonts/Microsoft PhagsPa.otf">
+	<title>Nosock</title>
 	<link media="all" rel="stylesheet" href="assets/css/all.css">
 </head>
-	<body>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, sed.</p>
-	<span class="icon icon-heart"></span>
-	<span class="icon-logo"></span>
+<body>
+<!-- <img src="1_home_page.jpg" class="pp" alt=""> -->
+<!-- <img src="1-home-page-sm.jpg" class="pp" alt=""> -->
+<!-- <img src="3_product_page.jpg" class="pp" alt=""> -->
+<!-- <img src="3-prod-page.jpg" class="pp" alt=""> -->
+	<header class="header">
+		<div class="container">
+			<div class="header-holder">
+				<div class="header-inner header-inner-column">
+					<a href="#" class="logo"><span class="icon-logo"></span></a>
+				</div>
+				<div class="header-inner header-inner-center">
+					<nav class="main-nav">
+						<button class="opener-menu opener-x">
+							<span>Menu</span>
+						</button>
+						<ul id="open-menu" class="nav">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Store</a></li>
+							<li><a href="#">Lookbook</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Login</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-inner header-inner-column">
+					<ul class="list list-icons">
+						<li>
+							<a href=""><i class="icon-search"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="icon-heart"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="icon-cart"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<form>
+				<input type="number" id="counter" placeholder="1">
+			</form>
+		</div>
+	</main>
+
+
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="assets/js/open-menu.js"></script>
+	<script src="assets/js/jquery.formstyler.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".opener-menu").click(function(){
+				$("#open-menu").toggle();
+			});
+			$('#counter').styler();
+		});
+	</script>
 <!-- 	// <script src="assets/js/assets.js"></script> -->
 </body>
 </html>

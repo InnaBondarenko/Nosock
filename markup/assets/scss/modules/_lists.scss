@@ -1,5 +1,7 @@
-$icon-social-font-size:     16px;
+$icon-social-font-size:     25px;
 $list-bg-sm-screen:         #ebebeb;
+$icon-social-font-size-sm:     20px;
+
 .test{
 	background: $brand-color;
 }
@@ -12,7 +14,10 @@ $list-bg-sm-screen:         #ebebeb;
 				text-decoration: none;
 			}
 			[class*="icon-"]{
-				font-size: $icon-social-font-size;
+				font-size: $icon-social-font-size-sm;
+				@media screen and (min-width: 960px){
+					font-size: $icon-social-font-size;
+				}
 			}
 		}
 	}
