@@ -82,7 +82,6 @@ gulp.task('browser-sync', function() {
         open: true,
         browser: 'default',
         startPath: '/index.html'
-
     });
 });
 gulp.task('watch', function() {

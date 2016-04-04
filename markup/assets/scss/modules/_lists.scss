@@ -31,7 +31,7 @@ $icon-social-font-size-sm:     20px;
 			}
 			a{
 				margin-right: 17px;
-				padding: 2px 6px;
+				padding: 6px;
 				border-radius: 50%;
 				[class*="icon-"]{
 					color: $text-inverse-color;
@@ -103,6 +103,7 @@ $icon-social-font-size-sm:     20px;
 					left: 0;
 					right: 0;
 					top: 100%;
+					z-index: 100;
 					background: $list-bg-sm-screen;
 					li{
 						margin-bottom: 8px;

@@ -127,7 +127,7 @@
 	 		font-size: 20px;
 	 		bottom: 39%;
 	 		left: -16px;
-	 		@media screen and (min-width: 960px){
+	 		@media screen and (min-width: 768px){
 	 			font-size: 20px;
 	 		}
 	 	}
@@ -135,7 +135,7 @@
 	 		width: 100%;
 	 		padding: 0;
 	 		margin: 0;
-	 		@media screen and (min-width: 960px){
+	 		@media screen and (min-width: 768px){
 	 			width: 75%;
 	 			margin: 0 auto;
 	 			img{
@@ -151,7 +151,7 @@
 	 		.image-holder{
 	 			margin: 0;
 	 			padding: 0;
-	 			@media screen and (min-width: 960px){
+	 			@media screen and (min-width: 768px){
 					img{
 		 				margin: 0 0 0 -37px;
 		 			}
