@@ -13,10 +13,16 @@
 			font-size: 16px;
 			margin-bottom: 9px;
 			font-weight: 400;
+			@media screen and (min-width: 420px){
+				font-size: $font-size-base;
+			}
 		}
 		p{
 			font-size: 13px;
 			margin-bottom: 37px;
+			@media screen and (min-width: 420px){
+				font-size: 16px;
+			}
 		}
 		.list-icons{
 			margin-left: 2px;
@@ -31,6 +37,9 @@
 		bottom: 36%;
 		left: -16px;
 		z-index: 10;
+		@media screen and (min-width: 420px){
+			font-size: 25px;
+		}
 	}
 	.image-holder{
 		margin-top: 22px;
@@ -124,7 +133,7 @@
 		margin-bottom: 0;
 		padding: 10px 0;
 	 	.price{
-	 		font-size: 20px;
+	 		font-size: 25px;
 	 		bottom: 39%;
 	 		left: -16px;
 	 		@media screen and (min-width: 768px){
@@ -175,11 +184,23 @@
 		 		h3{
 		 			font-size: 16px;
 		 			margin-top: 0;
+		 			@media screen and (min-width: 768px){
+						font-size: 20px;
+		 			}
+		 			@media screen and (min-width: 960px){
+		 				font-size: 16px;
+		 			}
 		 		}
 		 		p{
 		 			font-size: 13px;
 		 			margin-bottom: 6px;
 		 			margin-left: 9px;
+		 			@media screen and (min-width: 768px){
+						font-size: 17px;
+		 			}
+		 			@media screen and (min-width: 960px){
+		 				font-size: 13px;
+		 			}
 		 		}
 		 		.list-icons{
 		 			align-self: flex-end;
