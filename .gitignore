@@ -1,10 +1,6 @@
 node_modules/
 *.cfd/
 UI_VP.html/
-<<<<<<< HEAD
 UI_MR.html/
 UI_SP.html/
-=======
-UI_SP.html/
-UI_IB.html/
->>>>>>> 06892188e73464f6739045a61afab599e5a72316
+

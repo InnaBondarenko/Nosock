@@ -9,13 +9,11 @@
 @import 'modules/counter';
 @import 'modules/block-options';
 @import 'modules/basket-block';
-<<<<<<< HEAD
 @import 'modules/carousel';
-=======
 @import 'modules/thumbnails';
 @import 'modules/blocks';
 @import 'modules/intro';
->>>>>>> 06892188e73464f6739045a61afab599e5a72316
+
 
 @font-face {
     font-family: 'Microsoft PhagsPa';
@@ -28,18 +26,14 @@
     font-weight: normal;
     font-style: normal;
 }
-.pp{
-	position: absolute;
-<<<<<<< HEAD
-	top: 26px;
-=======
-	top: 3768px;
->>>>>>> 06892188e73464f6739045a61afab599e5a72316
-	opacity: 0.5;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	        transform: translateX(-50%);
-	pointer-events: none;
-	z-index: 999;
-}
+// .pp{
+// 	position: absolute;
+// 	top: 26px;
+// 	opacity: 0.5;
+// 	left: 50%;
+// 	-webkit-transform: translateX(-50%);
+// 	        transform: translateX(-50%);
+// 	pointer-events: none;
+// 	z-index: 999;
+// }
 
