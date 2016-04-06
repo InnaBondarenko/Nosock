@@ -1,0 +1,17 @@
+.intro{
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	.intro-img{
+		max-width: 1016px;
+		height: 414px;
+		@media screen and (min-width: 768px) {
+			height: 580px;
+			max-width: 1424px;
+		}
+		@media screen and (min-width: 960px) {
+			height: 782px;
+			max-width: 1920px;
+		}
+	}
+}
