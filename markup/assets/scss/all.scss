@@ -10,6 +10,7 @@
 @import 'modules/block-options';
 @import 'modules/basket-block';
 @import 'modules/thumbnails';
+@import 'modules/blocks';
 
 @font-face {
     font-family: 'Microsoft PhagsPa';
@@ -24,7 +25,7 @@
 }
 .pp{
 	position: absolute;
-	top: 3735px;
+	top: 3768px;
 	opacity: 0.5;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
