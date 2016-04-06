@@ -1,0 +1,62 @@
+@import 'icons/variables';
+
+.block-trade{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	// width: 100%;
+	// &-title{
+	// 	width: 100%;
+	// 	justify-content: flex-end;
+	// }
+	&-image{
+		width: 617px;
+		overflow: hidden;
+	}
+	&-description{
+		width: 387px;
+	}
+	&-title{
+		.name{
+			margin-top: 0;
+			letter-spacing: 4px;
+		}
+	}
+}
+
+
+.owl{
+	&-nav{
+
+	}
+	&-prev,
+	&-next{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		&:before{
+			font-family: 'icomoon';
+			font-size: 58px;
+			font-weight: 300;
+		opacity: .5;
+		}
+	}
+	&-prev{
+		left: -14px;
+		&:before{
+			content: $icon-chevron-thin-left;
+		}
+	}
+	&-next{
+		right: -14px;
+		&:before{
+			content: $icon-chevron-thin-right;
+		}
+	}
+	&-item{
+		width: 617px;
+		padding: 28px;
+	}
+}
