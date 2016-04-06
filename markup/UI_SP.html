@@ -61,7 +61,7 @@
 					</ul>
 				</li>
 				<li class="h4 opener">
-					<a href="#">Woomen</a>
+					<a href="#">Women</a>
 					<ul>
 						<li>
 							<a href="#" class="active">ankle</a>
@@ -804,7 +804,9 @@
 	<script>
 		$(function(){
 		$('.opener').on('click', function () {
+			 $('.opener').removeClass('open');
 			 $(this).toggleClass('open')
+			 
 		})
 	});
 	</script>
