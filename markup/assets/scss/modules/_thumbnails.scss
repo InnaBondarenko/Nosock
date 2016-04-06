@@ -1,0 +1,135 @@
+.block-lookbook{
+	padding-bottom: 38px;
+	@media screen and (min-width: 768px){
+		padding-bottom: 172px;
+	}
+	h1{
+		margin-bottom: 24px;
+		font-size: 18px;
+		@media screen and (min-width: 768px){
+			font-size: $font-size-h1;
+			margin-bottom: 35px;
+		}
+	}
+	@media screen and (min-width: 768px){
+		margin: 0 -15px;	
+	}
+}
+.thumbnail{
+	position: relative;
+	&:before{
+		display: none;
+		content: attr(data-icon);
+		@media screen and (min-width: 768px){
+			display: block;
+			position: absolute;
+			font-size: 120px;
+		}
+		@media screen and (min-width: 960px){
+			font-size: 198px;
+		}
+	}
+	&-caption{
+		position: absolute;
+		z-index: 10;
+		h3{
+			font-size: 14px;
+			@media screen and (min-width: 768px){
+				font-size: $font-size-h3;
+			}
+		}
+	}
+	&-right{
+		&:before{
+			right: 255%;
+			top: 3%;
+			transform: rotate(26deg);
+		}
+		.thumbnail-image{
+			margin: 0 15px 0 19px;
+			@media screen and (min-width: 768px){
+				margin: 0;
+			}
+		}
+		.thumbnail-caption{
+			right: 0;
+			top: 58.5%;
+			transform: translateX(59%);
+			@media screen and (min-width: 768px){
+				left: 0;
+				top: 44%;
+				transform: translateX(-40%);
+			}
+		}
+	}
+	&-left{
+		margin: 108px -14px 0 0;
+		@media screen and (min-width: 420px){
+			margin: 220px 0 0 15px;
+		}
+		@media screen and (min-width: 768px){
+			margin-top: 115px;
+		}
+	}
+	&-top{
+		position: relative;
+		left: -27%;
+		margin-top: 25%;
+		z-index: -1;
+		margin-left: -20px;
+		margin-right: -16px;
+		@media screen and (min-width: 768px){
+			margin-left: 0;
+			margin-right: 0;
+			left: -43%;
+			margin-top: -25%;
+		}
+		&:before{
+			left: 199%;
+			bottom: -13%;
+			transform: rotate(17deg);
+		}
+		.thumbnail-caption{
+			right: 0;
+			bottom: -24%;
+			transform: translateX(-7%);
+			width: 110px;
+			@media screen and (min-width: 420px){
+				width: auto;
+				bottom: -15%;
+				transform: translateX(-20%);
+			}
+			@media screen and (min-width: 768px){
+				bottom: 2%;
+				transform: translateX(55%);
+			}
+			@media screen and (min-width: 960px){
+				bottom: 18%;
+				transform: translateX(27%);
+			}
+		}
+	}
+	&-bottom{
+		margin: 49px 12px 0 12px;
+		position: relative;
+		left: 12px;
+		@media screen and (min-width: 768px){
+			margin: -20px 0 0 0;
+			position: static;
+		}
+		&:before{
+			font-size: 145px;
+			right: 153%;
+			bottom: 27%;
+		}
+		.thumbnail-caption{
+			left: 0;
+			bottom: 5%;
+			transform: translateX(-64%);
+			@media screen and (min-width: 768px){
+				bottom: 11%;
+				transform: translateX(-47%);
+			}
+		}
+	}
+}

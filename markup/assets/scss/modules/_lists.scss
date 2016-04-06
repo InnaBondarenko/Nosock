@@ -1,8 +1,16 @@
 $icon-social-font-size:     25px;
 $list-bg-sm-screen:         #ebebeb;
+$icon-social-font-size-sm:     20px;
+$font-size-footer:				18px;
+$font-size-footer-sm:			12px;
+
 .test{
 	background: $brand-color;
+	color: $text-inverse-color;
+	height: 90px;
+	width: 3px;
 }
+
 .list{
 	display: flex;
 	li{
@@ -12,7 +20,10 @@ $list-bg-sm-screen:         #ebebeb;
 				text-decoration: none;
 			}
 			[class*="icon-"]{
-				font-size: $icon-social-font-size;
+				font-size: $icon-social-font-size-sm;
+				@media screen and (min-width: 960px){
+					font-size: $icon-social-font-size;
+				}
 			}
 		}
 	}
@@ -24,9 +35,12 @@ $list-bg-sm-screen:         #ebebeb;
 				}
 			}
 			a{
-				margin-right: 17px;
-				padding: 2px 6px;
+				margin-right: 20px;
+				padding: 6px;
 				border-radius: 50%;
+				@media screen and (min-width: 960px){
+					margin-right: 27px;
+				}
 				[class*="icon-"]{
 					color: $text-inverse-color;
 				}
@@ -49,10 +63,25 @@ $list-bg-sm-screen:         #ebebeb;
 			flex-direction: column;
 			align-items: center;
 			li{
+				text-align: center;
+				&:first-child{
+					a{
+						margin-bottom: 28px;
+					}	
+				}
 				a{
 					margin-right: 0;
-					margin-bottom: 15px;
+					margin-bottom: 0;
 				}				
+			}
+		}
+		&-sm{
+			li{
+				a{
+					[class*="icon-"]{
+						font-size: $icon-social-font-size-sm;
+					}
+				}
 			}
 		}
 	}
@@ -82,6 +111,7 @@ $list-bg-sm-screen:         #ebebeb;
 					left: 0;
 					right: 0;
 					top: 100%;
+					z-index: 100;
 					background: $list-bg-sm-screen;
 					li{
 						margin-bottom: 8px;
@@ -97,7 +127,7 @@ $list-bg-sm-screen:         #ebebeb;
 				}
 			}		
 		}
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 960px){
 			flex-direction: column;
 			background: transparent;
 			margin: 0;
@@ -108,7 +138,7 @@ $list-bg-sm-screen:         #ebebeb;
 				}
 			}
 			.opener{
-				margin-bottom: 46px;
+				margin-bottom: 55px;
 				ul{
 					display: none;
 				}
@@ -118,6 +148,7 @@ $list-bg-sm-screen:         #ebebeb;
 						display: block;
 						margin-top: 10px;
 						background: transparent;
+						margin-bottom: -17px;
 						li{
 							margin-bottom: 8px;
 							text-align: left;
@@ -162,6 +193,42 @@ $list-bg-sm-screen:         #ebebeb;
 			&.blue{
 				a{
 					background: #d2ebef;
+				}
+			}
+		}
+	}
+	&-footer{
+		flex-wrap: wrap;
+		li{
+			min-width: 26%;
+			margin-bottom: 25px;
+			order: 1;
+			&:nth-child(2){
+				order: 5;
+			}
+			&:nth-child(3){
+				order: 6;
+			}
+			&:nth-child(4){
+				order: 2;
+			}
+			&:nth-child(5){
+				order: 4;
+			}
+			&:last-child{
+				order: 3;
+			}
+			@media screen and (min-width: 768px){
+				margin-bottom: 7px;
+				padding-left: 10px;
+				order: 0;
+			}
+			a{
+				color: $text-inverse-color;
+				font-weight: 700;
+				font-size: $font-size-footer-sm;
+				@media screen and (min-width: 960px){
+					font-size: $font-size-footer;
 				}
 			}
 		}

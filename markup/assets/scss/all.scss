@@ -5,7 +5,12 @@
 @import 'modules/icons/style';
 @import 'modules/navigation';
 @import 'modules/lists';
-
+@import 'modules/product-card';
+@import 'modules/counter';
+@import 'modules/block-options';
+@import 'modules/basket-block';
+@import 'modules/thumbnails';
+@import 'modules/blocks';
 
 @font-face {
     font-family: 'Microsoft PhagsPa';
@@ -18,13 +23,14 @@
     font-weight: normal;
     font-style: normal;
 }
-// .pp{
-// 	position: absolute;
-// 	top: 0px;
-// 	opacity: 0.5;
-// 	left: 50%;
-// 	-webkit-transform: translateX(-50%);
-// 	        transform: translateX(-50%);
-// 	pointer-events: none;
-// 	z-index: 999;
-// }
+.pp{
+	position: absolute;
+	top: 3768px;
+	opacity: 0.5;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	pointer-events: none;
+	z-index: 999;
+}
+

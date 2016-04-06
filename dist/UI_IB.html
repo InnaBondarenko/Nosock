@@ -10,6 +10,9 @@
 <body>
 <!-- <img src="1_home_page.jpg" class="pp" alt=""> -->
 <!-- <img src="1-home-page-sm.jpg" class="pp" alt=""> -->
+<!-- <img src="3_product_page.jpg" class="pp" alt=""> -->
+<!-- <img src="3-prod-page.jpg" class="pp" alt=""> -->
+<!-- <img src="4 wish list.jpg" class="pp" alt=""> -->
 	<header class="header">
 		<div class="container">
 			<div class="header-holder">
@@ -46,17 +49,34 @@
 			</div>
 		</div>
 	</header>
+	<main class="main">
+		<div class="container">
+			<form>
+				<div class="counter">
+					<input type="number" class="counters" placeholder="1">
+				</div>
+			</form>
+			<p>Lorem</p>
+			<form>
+				<div class="counter counter-light">
+					<input type="number" class="counters" placeholder="1">
+				</div>
+			</form>
+		</div>
+	</main>
 
 
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="assets/js/open-menu.js"></script>
+	<script src="assets/js/jquery.formstyler.min.js"></script>
 	<script>
 		$(document).ready(function(){
 			$(".opener-menu").click(function(){
 				$("#open-menu").toggle();
 			});
+			$('.counters').styler();
 		});
 	</script>
 <!-- 	// <script src="assets/js/assets.js"></script> -->

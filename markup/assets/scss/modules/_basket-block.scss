@@ -1,0 +1,128 @@
+$basket-border-color:   #000;
+
+.basket-block{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -15px;
+	&:nth-child(2){
+		box-shadow: 0 1px 0 0 $basket-border-color,
+					0 -1px 0 0 $basket-border-color;
+	}
+	@media screen and (min-width: 768px){
+		margin: 0 60px;
+	}
+	@media screen and (min-width: 768px){
+		box-shadow: 0 -1px 0 0 $basket-border-color,
+					0 1px 0 0 $basket-border-color;
+		&:nth-child(2){
+			box-shadow: none;
+		}
+	}
+	.image-holder{
+		width: 45%;
+		z-index: -1;
+		img{
+			margin: 20px 0 0 -15px;
+		}
+		@media screen and (min-width: 768px){
+			width: 35%;
+			img{
+				margin: 0;
+			}
+		}
+		@media screen and (min-width: 960px){
+			width: 14%;
+		}
+	}
+	.info-block{
+		display: flex;
+		width: 43%;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: -30px;
+		align-items: flex-end;
+		@media screen and (min-width: 768px){
+			flex-direction: row;
+			align-items: center;
+			width: 55%;
+			margin-left: 0;
+		}
+		.caption{
+			margin: 10px 0 0px -5px;
+			h3{
+				display: none;
+				@media screen and (min-width: 768px){
+					display: block;
+					font-weight: 400;
+					margin-bottom: 0;
+				}
+			}
+			p{
+				font-size: 13px;
+				text-align: right;
+				@media screen and (min-width: 420px){
+					font-size: $font-size-h4;	
+				}
+				@media screen and (min-width: 960px){
+					font-size: $font-size-h3;
+					text-align: left;
+				}
+			}
+			@media screen and (min-width: 768px){
+				margin: -7px 0 0 0;
+			}
+			@media screen and (min-width: 960px){
+				min-width: 50%;
+			}
+		}
+		form{
+			order: 1;
+			.counter{
+				@media screen and (min-width: 768px){
+					margin: 5px 0 0 -6px;
+				}
+			}
+			@media screen and (min-width: 767px){
+				order: 0;
+			}
+			@media screen and (min-width: 960px){
+				min-width: 42%;
+				text-align: center;
+			}
+		}
+		.price{
+			font-size: 16px;
+			font-weight: 700;
+			margin: 11px 3px 17px 0;
+			@media screen and (min-width: 420px){
+				font-size: $font-size-h4;
+			}
+			@media screen and (min-width: 960px){
+				font-size: $font-size-h3;
+				margin: 0;
+			}
+		}
+	}
+	.btn-block{
+		width: 30%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.btn{
+			display: none;
+		}
+		[class*="icon-"]{
+			font-size: 24px;
+			margin-right: -8px;
+		}
+		@media screen and (min-width: 768px){
+			width: 18%;
+			[class*="icon-"]{
+				display: none;
+			}
+			.btn{
+				display: inline-block;
+			}
+		}
+	}
+}

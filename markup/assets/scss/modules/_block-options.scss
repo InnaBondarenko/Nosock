@@ -1,0 +1,21 @@
+.block-options{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@media screen and (min-width: 960px){
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	&-inner{
+		width: 50%;
+		align-self: flex-srart;
+		&:nth-child(2),
+		&:last-child{
+			align-self: flex-end;
+		}
+		@media screen and (min-width: 960px){
+			width: 23%;
+			
+		}
+	}
+}

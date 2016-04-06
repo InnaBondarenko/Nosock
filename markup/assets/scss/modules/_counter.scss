@@ -1,0 +1,145 @@
+$border-color: #000;
+$border-secondary-color: #a0a0a0;
+
+.counter{
+	.jq-number {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 39px;
+		@media screen and (min-width: 768px){
+			padding: 0 40px;
+		}
+		&__field {
+			width: 43px;
+			border: 1px solid $border-secondary-color;
+			&:hover {
+				border-color: $border-secondary-color;
+			}
+			input {
+				box-sizing: border-box;
+				width: 100%;
+				padding: 7px 9px 8px;
+				border: none;
+				outline: none;
+				background: none;
+				text-align: center;
+				-moz-appearance: textfield;
+				font-size: 19px;
+				font-family: $font-family-base;
+				font-weight: 700;
+			}
+			@media screen and (min-width: 768px){
+				width: 45px;
+				border: 1px solid $brand-color;
+				&:hover {
+					border-color: $brand-color;
+				}
+				input {
+					font-size: 24px;
+					padding: 3px 9px;
+					box-shadow: inset 0px 0px 0px 1px #aaa;
+				}
+			}
+		}
+		&__spin {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 41px;
+			height: 41px;
+			border: 1px solid $border-secondary-color;
+			-webkit-user-select: none;
+			   -moz-user-select: none;
+			    -ms-user-select: none;
+			        user-select: none;
+			cursor: pointer;
+			&:after {
+				content: '+';
+				position: absolute;
+				top: 9px;
+				left: 50%;
+				transform: translateX(-50%);
+				font-size: 19px;
+				line-height: 1;
+				font-weight: 700;
+			}
+			&.minus {
+				top: auto;
+				bottom: 0;
+				left: 0;
+				&:after {
+					content: '-';
+				}
+			}
+			@media screen and (min-width: 768px){
+				border: 1px solid $brand-color;
+				box-shadow: inset 0px 0px 0px 1px #aaa;
+				height: 39px;
+				&:after {
+					font-size: 32px;
+					top: 1px;
+				}
+			}
+		}
+		&.disabled .jq-number__field,
+		&.disabled .jq-number__spin {
+			border-color: #CCC;
+			color: #888;
+		}
+	}
+	&-light{
+		.jq-number{
+			padding: 0 32px;
+			@media screen and (min-width: 960px){
+				padding: 0 38px;
+			}
+			&__field {
+				width: 37px;
+				border: 1px solid $border-secondary-color;
+				&:hover {
+					border-color: $border-secondary-color;
+				}
+				input {
+					padding: 3px 9px 5px;
+					font-size: 16px;
+					box-shadow: none;
+				}
+				@media screen and (min-width: 960px){
+					border: 1px solid $border-secondary-color;
+					width: 45px;
+					&:hover {
+						border-color: $border-secondary-color;
+					}
+					input{
+						padding: 6px 9px 7px;
+						font-size: 19px;
+					}
+				}
+			}
+			&__spin {
+				border: 1px solid $border-secondary-color;
+				box-shadow: none;
+				width: 33px;
+				height: 31px;
+				&:after{
+					top: 5px;
+					font-size: 16px;
+				}
+				@media screen and (min-width: 960px){
+					width: 39px;
+					height: 39px;
+					&:after{
+						font-size: 32px;
+						top: 1px;
+					}
+				}
+			}
+		}
+	}
+}
+.jq-number__field input::-webkit-inner-spin-button,
+.jq-number__field input::-webkit-outer-spin-button {
+	margin: 0; /* в каких-то браузерах присутствует отступ */
+	-webkit-appearance: none;
+}
