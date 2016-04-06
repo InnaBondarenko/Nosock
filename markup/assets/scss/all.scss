@@ -9,6 +9,7 @@
 @import 'modules/counter';
 @import 'modules/block-options';
 @import 'modules/basket-block';
+@import 'modules/thumbnails';
 
 @font-face {
     font-family: 'Microsoft PhagsPa';
@@ -23,7 +24,7 @@
 }
 .pp{
 	position: absolute;
-	top: 1963px;
+	top: 3735px;
 	opacity: 0.5;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
