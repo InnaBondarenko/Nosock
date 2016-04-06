@@ -1,0 +1,1 @@
+!function(){"use strict";function t(t){t.addEventListener("click",function(t){t.preventDefault(),this.classList.contains("active")===!0?this.classList.remove("active"):this.classList.add("active")})}for(var e=document.querySelectorAll(".opener"),i=e.length-1;i>=0;i--){var s=e[i];t(s)}}();
