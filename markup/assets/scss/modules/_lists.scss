@@ -1,9 +1,14 @@
 $icon-social-font-size:     25px;
 $list-bg-sm-screen:         #ebebeb;
 $icon-social-font-size-sm:     20px;
+$font-size-footer:				18px;
+$font-size-footer-sm:			12px;
 
 .test{
 	background: $brand-color;
+	color: $text-inverse-color;
+	height: 90px;
+	width: 3px;
 }
 
 .list{
@@ -30,9 +35,12 @@ $icon-social-font-size-sm:     20px;
 				}
 			}
 			a{
-				margin-right: 17px;
+				margin-right: 20px;
 				padding: 6px;
 				border-radius: 50%;
+				@media screen and (min-width: 960px){
+					margin-right: 27px;
+				}
 				[class*="icon-"]{
 					color: $text-inverse-color;
 				}
@@ -185,6 +193,42 @@ $icon-social-font-size-sm:     20px;
 			&.blue{
 				a{
 					background: #d2ebef;
+				}
+			}
+		}
+	}
+	&-footer{
+		flex-wrap: wrap;
+		li{
+			min-width: 26%;
+			margin-bottom: 25px;
+			order: 1;
+			&:nth-child(2){
+				order: 5;
+			}
+			&:nth-child(3){
+				order: 6;
+			}
+			&:nth-child(4){
+				order: 2;
+			}
+			&:nth-child(5){
+				order: 4;
+			}
+			&:last-child{
+				order: 3;
+			}
+			@media screen and (min-width: 768px){
+				margin-bottom: 7px;
+				padding-left: 10px;
+				order: 0;
+			}
+			a{
+				color: $text-inverse-color;
+				font-weight: 700;
+				font-size: $font-size-footer-sm;
+				@media screen and (min-width: 960px){
+					font-size: $font-size-footer;
 				}
 			}
 		}
