@@ -1,0 +1,85 @@
+@import 'icons/variables';
+
+.block-trade{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	&-image{
+		width: 617px;
+		overflow: hidden;
+	}
+	&-description{
+		width: 387px;
+	}
+	&-title{
+		.name{
+			margin-top: 0;
+			letter-spacing: 4px;
+		}
+	}
+}
+
+
+.owl{
+	&-nav{
+
+	}
+	&-prev,
+	&-next{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		&:before{
+			font-family: 'icomoon';
+			font-size: 58px;
+			font-weight: 300;
+		opacity: .5;
+		}
+	}
+	&-prev{
+		left: -14px;
+		&:before{
+			content: $icon-chevron-thin-left;
+		}
+	}
+	&-next{
+		right: -14px;
+		&:before{
+			content: $icon-chevron-thin-right;
+		}
+	}
+	&-item{
+		width: 617px;
+		padding: 28px;
+	}
+}
+
+.magnifier{
+	width: 400px !important;
+	height: 400px !important;
+	left: 1200px !important;
+    top: 410px !important;
+}
+
+// .magnifier,
+// .cursorshade,
+// .statusdiv{
+// 	display: none;
+// 	@media screen and (min-width: 768px){
+// 		display: block;
+// 	}
+// }
+.price{
+			font-size: 16px;
+			font-weight: 700;
+			margin: 11px 3px 17px 0;
+			@media screen and (min-width: 420px){
+				font-size: $font-size-h4;
+			}
+			@media screen and (min-width: 960px){
+				font-size: $font-size-h3;
+				margin: 0;
+			}
+		}
