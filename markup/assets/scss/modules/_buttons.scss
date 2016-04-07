@@ -1,0 +1,105 @@
+//Buttons
+$btn-font-size:                  27px;
+$btn-font-768-size:              20px;
+$btn-form-768-font-size:         20px;
+$btn-cart-768-font-size:         18px;
+$btn-form-font-size:  			23px;
+$btn-cart-font-size:     		25px;
+$btn-color:						#fff;
+$btn-font-weight:                700;
+$btn-padding:			      11px 49px 23px 41px;
+$btn-cart-padding:      		17px 26px 19px 29px;
+$btn-wish-padding:      		12px 30px 22px 33px;
+$btn-form-padding:     			15px 23px 19px 33px;
+$btn-form-768-padding:     		17px 10px;
+$btn-cart-768-padding:     		16px 45px 20px 42px;
+$btn-sm-padding:      			16px 28px 17px 33px;
+$btn-brand-bg:                   #000;
+$btn-brand-bg-hover:              lighten($btn-brand-bg, 30%);
+$btn-trapeze-bg:                 $text-inverse-color;
+$btn-trapeze-bg-hover:           #f0975c;
+$btn-dark-bg:                   #494747;
+$btn-dark-bg-hover:             darken($btn-dark-bg, 10%);
+
+
+
+
+.btn{
+	position: relative;
+	padding: $btn-padding;
+	font-size: $btn-font-size;
+	font-weight: $btn-font-weight;
+	color: $btn-color;
+	border: none;
+	display: inline-block;
+	font-family: inherit;
+	margin: 15px;
+	text-align: center;
+	letter-spacing: 3.3px;
+
+		&:hover,
+		&:focus{
+			text-decoration: none;
+		}
+		 @media screen and (max-width: 768px){
+	      padding: 14px 58px 19px 50px;
+	      text-transform: uppercase;
+	      letter-spacing: 2px;
+	      font-size: $btn-font-768-size;
+    }
+		
+	&-brand{
+		background: $btn-brand-bg;
+		color: $btn-color;
+			&:hover,
+			&:focus{
+				background: $btn-brand-bg-hover;
+				color: $btn-color;	
+		}
+	}
+	&-cart{
+		font-size: $btn-cart-font-size;
+	   	 padding: $btn-cart-padding;
+	   	  text-transform: uppercase;
+	   	   @media screen and (max-width: 768px){
+	       display: none;
+   		}
+	}
+	&-wish{
+		font-size: $btn-font-size;
+	   	 padding: $btn-wish-padding;
+	   	  @media screen and (max-width: 768px){
+	       display: none;
+		}
+	}
+	&-form{
+		font-size: $btn-form-font-size;
+	   	 padding: $btn-form-padding;
+	   	  text-transform: uppercase;
+	   	   @media screen and (max-width: 768px){
+	   	  display: none;
+    	}
+	}
+	&-sm{
+		font-size:  $btn-font-size;
+	   	 padding: $btn-sm-padding;
+	}
+	&-cart-768{
+		display: none;
+		 @media screen and (max-width: 768px){
+	      padding: $btn-cart-768-padding;
+	      letter-spacing: 2px
+	      font-size: $btn-cart-768-font-size;
+	      display: inline-block;
+    	}
+	}
+	&-form-768{
+		display: none;
+		 @media screen and (max-width: 768px){
+	      font-size: $btn-form-768-font-size;
+	      display:block;
+	      margin: 0;
+	      padding: $btn-form-768-padding;
+    	}
+	}
+}

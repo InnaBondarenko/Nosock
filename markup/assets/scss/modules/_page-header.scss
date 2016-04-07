@@ -1,0 +1,41 @@
+.page-header{
+	margin:10px 0;
+	 padding:10px 0;
+		 @media screen and (max-width: 320px){
+			    background: #ebebeb;
+			    margin: 10px -15px;
+		    		}
+	&-wish{
+		font-size: 24px;
+		color: $brand-color;
+		    letter-spacing: 2px;
+		    .icon-heart{
+	    	    font-size: 22px;
+				padding-right: 38px;
+				@media screen and (max-width: 320px){
+			      font-size: 19px;
+				padding-right: 22px;
+    		}
+		}
+		      @media screen and (max-width: 320px){
+			      font-size: 19px;
+				  letter-spacing: 1px;
+    		}
+	}
+	&-cart{
+		font-size: 24px;
+		color: $brand-color;
+		    letter-spacing: 2px;
+		    .icon-cart{
+	    	    font-size: 29px;
+				padding-right: 38px;
+				@media screen and (max-width: 320px){
+				padding-right: 22px;
+    		}
+		}
+		      @media screen and (max-width: 320px){
+			      font-size: 23px;
+				  letter-spacing: 1px;
+    		}
+	}
+}

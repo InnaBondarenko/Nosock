@@ -1,0 +1,29 @@
+ $agination-color:          #000;
+ $agination-fz:             25px;
+
+
+
+
+
+#pagination {
+    display: inline-block;
+    a{
+        display: none;
+    }
+    span{
+        display: inline-block;
+        a, i {
+            display: inline-block;
+            vertical-align: middle;
+            color: $agination-color;
+            text-align: center;
+            font-size:  $agination-fz;
+            padding: 4px 7px;
+         }
+
+       a{
+    margin: 0px 8px 0 0px;
+    cursor: pointer;
+        }
+    }
+}
