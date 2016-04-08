@@ -137,10 +137,12 @@ $font-size-footer-sm:			12px;
 			flex-direction: column;
 			background: transparent;
 			margin: 0;
+			padding-top: 146px;
 			li{
 				a{
 					padding: 0;
 					color: $brand-color;
+					letter-spacing: 2px;
 				}
 			}
 			.opener{

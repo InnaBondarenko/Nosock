@@ -1,7 +1,7 @@
  $breadcrumb-color:    #6c6c6c;
  $breadcrumb-fz:       18px;
  $breadcrumb-margin:     3px;
- $breadcrumb-letter-spacing:    1.3px;
+ $breadcrumb-letter-spacing:    0.7px;
 
 
 .breadcrumb {
@@ -16,7 +16,7 @@
     margin: $breadcrumb-margin;
     display: inline-block;
     cursor: pointer;
-    letter-spacing: 1.3px;
+    letter-spacing: $breadcrumb-letter-spacing;
       &::after {
         content: '/';
       }

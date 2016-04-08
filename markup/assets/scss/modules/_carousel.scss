@@ -5,22 +5,53 @@
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	padding-top: 48px;
+	margin-bottom: 119px;
 	&-image{
 		width: 617px;
 		overflow: hidden;
+		position: relative;
 	}
-	&-description{
-		width: 387px;
+	&-text{
+		width: 402px;
+		text-align: justify;
+		.spec{
+			margin-bottom: 62px;
+		}
 	}
 	&-title{
+		margin-bottom: 38px;
+		padding-left: 15px;
 		.name{
 			margin-top: 0;
 			letter-spacing: 4px;
+			margin-bottom: 39px;
 		}
 	}
+	&-description{
+		margin-bottom: 75px;
+		padding-left: 15px;
+	}
+	&-buttons{
+		margin-right: -22px;
+		display: flex;
+	}
 }
-
-
+.selection{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 31px;
+	.feature{
+		margin-right: 20px;
+		min-width: 110px;
+		letter-spacing: 2px;
+	}
+}
+.title-options{
+	margin-bottom: 64px;
+}
 .owl{
 	&-nav{
 
@@ -39,15 +70,15 @@
 		}
 	}
 	&-prev{
-		left: -14px;
+		left: 0;
 		&:before{
-			content: $icon-chevron-thin-left;
+			content: $icon-chevron-left;
 		}
 	}
 	&-next{
-		right: -14px;
+		right: 2px;
 		&:before{
-			content: $icon-chevron-thin-right;
+			content: $icon-chevron-right;
 		}
 	}
 	&-item{
@@ -72,14 +103,14 @@
 // 	}
 // }
 .price{
-			font-size: 16px;
-			font-weight: 700;
-			margin: 11px 3px 17px 0;
-			@media screen and (min-width: 420px){
-				font-size: $font-size-h4;
-			}
-			@media screen and (min-width: 960px){
-				font-size: $font-size-h3;
-				margin: 0;
-			}
-		}
+	font-size: 16px;
+	font-weight: 700;
+	margin: 11px 3px 17px 0;
+	@media screen and (min-width: 420px){
+		font-size: $font-size-h4;
+	}
+	@media screen and (min-width: 960px){
+		font-size: $font-size-h3;
+		margin: 0;
+	}
+}
