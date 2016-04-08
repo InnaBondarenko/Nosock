@@ -1,14 +1,13 @@
  $breadcrumb-color:    #6c6c6c;
- $breadcrumb-fz:       21px;
+ $breadcrumb-fz:       18px;
  $breadcrumb-margin:     3px;
  $breadcrumb-letter-spacing:    0.7px;
 
 
-ol {
+.breadcrumb {
   list-style-type: none;
   font-size: 0;
-  margin: 16px 0;
-   @media screen and (max-width: 480px){
+   @media screen and (max-width: 768px){
         display: none;
       }
   li {
@@ -19,7 +18,7 @@ ol {
     cursor: pointer;
     letter-spacing: $breadcrumb-letter-spacing;
       &::after {
-        content: ' / ';
+        content: '/';
       }
       &:last-of-type {
         &::after {

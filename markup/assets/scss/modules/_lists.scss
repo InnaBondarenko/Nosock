@@ -98,6 +98,9 @@ $font-size-footer-sm:			12px;
 			a{
 				padding: 20px;
 				color: rgba($brand-color, .66);
+				.active{
+					color: $brand-color;
+				}
 			}
 		}
 		.opener{
@@ -227,6 +230,13 @@ $font-size-footer-sm:			12px;
 				margin-bottom: 7px;
 				padding-left: 10px;
 				order: 0;
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4),
+				&:nth-child(5),
+				&:last-child{
+					order: 0;
+				}
 			}
 			a{
 				color: $text-inverse-color;
