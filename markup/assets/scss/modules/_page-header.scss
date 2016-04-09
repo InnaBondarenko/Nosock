@@ -6,7 +6,7 @@
 		letter-spacing: 2px;
 		margin: 0;
 		[class*="icon-"]{
-			padding-right: 38px;
+			padding-right: 35px;
 			font-size: 22px;
 			@media screen and (max-width: 320px){
 				padding-right: 22px;
@@ -19,11 +19,13 @@
 		margin: 10px -15px;
 	}
 	&-lg{
-		[class*="icon-"]{
-			font-size: 29px;
-			@media screen and (max-width: 320px){
-				font-size: 23x;
-    		}
+		.h2{
+			[class*="icon-"]{
+				font-size: 29px;
+				@media screen and (max-width: 320px){
+					font-size: 30px;
+	    		}
+			}
 		}
 	}
 }

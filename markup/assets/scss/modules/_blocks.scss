@@ -35,29 +35,43 @@
 		overflow: hidden;	
 	}
 }
-.breadcrumb{
-	margin-top: 52px;
-	margin-bottom: 78px;
+.main-store{
+	.breadcrumb{
+		margin-top: 52px;
+		margin-bottom: 78px;
+	}
+	.block-products{
+		margin-bottom: 118px;
+	}
+	#pagination{
+		margin-bottom: 165px;
+	}
 }
-.block-products{
-	margin-bottom: 118px;
-}
-#pagination{
-	margin-bottom: 165px;
-}
+
 .block-product{
 	padding-top: 31px;
 }
 .main-cartlist{
 	.block-cart{
-		margin-bottom: 62px;
+		margin-bottom: 78px;
+		.basket-block{
+			&:first-child{
+				.image-holder{
+					img{
+						@media screen and (min-width: 768px){
+							margin-bottom: -14px;
+						}
+					}
+				}
+			}
+		}
 	}
 	.btn-holder{
 		text-align: center;
 		@media screen and (min-width: 768px){
 			text-align: right;
-			padding-right: 116px;
-			margin-bottom: 157px;
+			padding-right: 131px;
+			margin-bottom: 172px;
 		}
 	}
 }
