@@ -40,12 +40,18 @@ $btn-dark-bg-hover:             darken($btn-dark-bg, 10%);
 		&:focus{
 			text-decoration: none;
 		}
-		 @media screen and (max-width: 768px){
+    	@media screen and (max-width: 767px){
 	      padding: 14px 58px 19px 50px;
 	      text-transform: uppercase;
 	      letter-spacing: 2px;
 	      font-size: $btn-font-768-size;
-    }
+    	}
+    	@media screen and (min-width: 768px){
+	      padding: 14px 18px;
+    	}
+    	@media screen and (min-width: 960px){
+	      padding: 12px 44px;
+    	}
 		
 	&-brand{
 		background: $btn-brand-bg;
@@ -81,11 +87,11 @@ $btn-dark-bg-hover:             darken($btn-dark-bg, 10%);
 	}
 	&-sm{
 		font-size:  $btn-font-size;
-	   	 padding: $btn-sm-padding;
+	   	padding: $btn-sm-padding;
 	}
 	&-cart-768{
 		display: none;
-		 @media screen and (max-width: 768px){
+		@media screen and (max-width: 768px){
 	      padding: $btn-cart-768-padding;
 	      letter-spacing: 2px;
 	      font-size: $btn-cart-768-font-size;

@@ -63,7 +63,7 @@
 				magnifierpos: 'right',    				// сторона отображения контейнера left/right
 				magnifiersize: [0, 0], 					// размер контейнера  
 				magnifiereffectanimate: 'fadeIn',       // эффект появления/скрытия fadeIn/showIn/slideIn
-				innerzoom: false,						// показать контейнер внутри tmb
+				innerzoom: true,						// показать контейнер внутри tmb
 				innerzoommagnifier: false,				// показать контейнер как лупу
 				descarea: false,						// показать контейнер в произвольной области, область descarea должна иметь width и height				
 				leftoffset:  15, 						// отступ слева от tmb картинки

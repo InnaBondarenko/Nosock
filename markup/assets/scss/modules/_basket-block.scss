@@ -1,6 +1,9 @@
 $basket-border-color:   #000;
 
 .basket-block{
+	padding: 20px 15px;
+	margin: 0 -15px;
+	overflow: hidden;
 	&.close{
 		display: none;
 	}
@@ -19,18 +22,25 @@ $basket-border-color:   #000;
 						0 1px 0 0 $basket-border-color;
 		}
 	}
+	@media screen and (min-width: 960px){
+		padding: 0;
+	}
 	.image-holder{
 		overflow: hidden;
+		margin: 0 -15px;
 		img{
-			margin: 20px 0 0 -15px;
+			position: relative;
+			z-index: -1;
 		}
-		@media screen and (min-width: 768px){	
+		@media screen and (min-width: 768px){
+			margin: 0;	
 			img{
 				margin: 0;
 			}
 		}
 	}
 	.info-block{
+
 		.caption{
 			text-align: right;
 			h3{
@@ -111,17 +121,20 @@ $basket-border-color:   #000;
 		}
 	}
 	&-sm{
-		margin: 0 -15px;
 		&:nth-child(2){
-			padding-bottom: 8px;
+			.image-holder{
+				@media screen and (min-width: 1240px){
+					padding-right: 9px;
+				}	
+			}
 		}
-		@media screen and (min-width: 960px){
-			margin: 0 140px 9px 140px;
+		@media screen and (min-width: 1240px){
+			margin: 0 140px 1px 140px;
 		}
 		.image-holder{
 			img{
-				@media screen and (min-width: 768px){
-					transform: translate(20px, 0px);
+				@media screen and (min-width: 1240px){
+					transform: translate(10px, 0px);
 				}
 			}
 		}
@@ -141,29 +154,48 @@ $basket-border-color:   #000;
 		}
 
 		.btn-block{
-			a{
-				transform: translate(22px, 0px);
+			text-align: center;
+			@media screen and (min-width: 768px){
+				text-align: left;
+				a{
+					transform: translate(22px, 0px);
+				}
 			}
 		}
 	}
 	&-total{
-		padding: 20px 0 45px 0;
+		box-shadow: 0 1px 0 0 $basket-border-color;
+		padding: 0 0 7px 0;
+		@media screen and (min-width: 768px){
+			padding: 27px 0 45px 0;
+		}
 		.info-block{
 			.caption{
-				margin-top: 10px;
-				margin-right: 128px;
 				letter-spacing: 1px;
+				text-align: left;
+				margin:0 0 0 2px;
+				@media screen and (min-width: 768px){
+					margin-right: 128px;
+					text-align: right;
+					margin: 0;
+				}
 				h3{
+					display: inline-block;
 					font-size: 19px;
+					margin: 0 0 0 30px;
 					@media screen and (min-width: 768px){
 						font-size: $font-size-h3;
+						margin: 0;
 					}	
 				}
 			}
 			.price{
 				font-size: 19px;
+				text-align: left;
+				margin: 16px 0 0 -3px;
 				@media screen and (min-width: 960px){
 					font-size: $font-size-h3;
+					margin: 3px 0 0 0;
 				}	
 			}
 		}
