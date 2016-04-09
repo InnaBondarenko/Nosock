@@ -9,7 +9,7 @@
 	<link href="//db.onlinewebfonts.com/c/623a4e160c7783fb2450e2fade07d883?family=Microsoft+PhagsPa" rel="stylesheet" type="text/css"/>
 </head>
 	<body>
-		<img src="5_cart.jpg" alt="" class="pp">
+		<!-- <img src="5_cart.jpg" alt="" class="pp"> -->
 		<!-- <img src="5 cart.jpg" alt="" class="pp"> -->
 		<header class="header">
 			<div class="container">
@@ -93,7 +93,7 @@
 							</div>
 							<div class="col-xs-2 col-sm-4 col-md-2 col-lg-1">
 								<div class="btn-block">
-									<a href=""><i class="icon-close"></i></a>
+									<a href="#" class="close"><i class="icon-close"></i></a>
 								</div>
 							</div>
 						</div>
@@ -135,7 +135,7 @@
 							</div>
 							<div class="col-xs-2 col-sm-4 col-md-2 col-lg-1">
 								<div class="btn-block">
-									<a href=""><i class="icon-close"></i></a>
+									<a href="#" class="close"><i class="icon-close"></i></a>
 								</div>
 							</div>
 						</div>	
@@ -234,8 +234,8 @@
 				$("#open-menu").toggle();
 			});
 			$('.counters').styler();
-			$(".closer").click(function(){
-				$(this).addClass('close');
+			$(".close").click(function(){
+				$(this).parents(".basket-block").addClass("delete");
 			});
 		});
 	</script>

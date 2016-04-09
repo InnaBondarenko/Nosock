@@ -4,7 +4,7 @@ $basket-border-color:   #000;
 	padding: 20px 15px;
 	margin: 0 -15px;
 	overflow: hidden;
-	&.close{
+	&.delete{
 		display: none;
 	}
 	&:nth-child(2){
@@ -13,9 +13,9 @@ $basket-border-color:   #000;
 	}
 	@media screen and (min-width: 768px){
 		margin: 0 60px;
-		box-shadow: 0 1px 0 0 $basket-border-color;
+		box-shadow: 0 -1px 0 0 $basket-border-color;
 		&:nth-child(2){
-			box-shadow: 0 1px 0 0 $basket-border-color;
+			box-shadow: 0 -1px 0 0 $basket-border-color;
 		}
 		&:first-child{
 			box-shadow: 0 -1px 0 0 $basket-border-color,
@@ -164,7 +164,8 @@ $basket-border-color:   #000;
 		}
 	}
 	&-total{
-		box-shadow: 0 1px 0 0 $basket-border-color;
+		box-shadow: 0 -1px 0 0 $basket-border-color,
+					0 1px 0 0 $basket-border-color;
 		padding: 0 0 7px 0;
 		@media screen and (min-width: 768px){
 			padding: 27px 0 45px 0;
