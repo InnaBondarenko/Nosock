@@ -1,61 +1,6 @@
 @import 'icons/variables';
 
-.block-trade{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding-top: 48px;
-	margin-bottom: 119px;
-	&-image{
-		width: 617px;
-		overflow: hidden;
-		position: relative;
-	}
-	&-text{
-		width: 402px;
-		text-align: justify;
-		.spec{
-			margin-bottom: 62px;
-		}
-	}
-	&-title{
-		margin-bottom: 38px;
-		padding-left: 15px;
-		.name{
-			margin-top: 0;
-			letter-spacing: 4px;
-			margin-bottom: 39px;
-		}
-	}
-	&-description{
-		margin-bottom: 75px;
-		padding-left: 15px;
-	}
-	&-buttons{
-		margin-right: -22px;
-		display: flex;
-	}
-}
-.selection{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: center;
-	margin-bottom: 31px;
-	.feature{
-		margin-right: 20px;
-		min-width: 110px;
-		letter-spacing: 2px;
-	}
-}
-.title-options{
-	margin-bottom: 64px;
-}
 .owl{
-	&-nav{
-
-	}
 	&-prev,
 	&-next{
 		position: absolute;
@@ -64,9 +9,12 @@
 		cursor: pointer;
 		&:before{
 			font-family: 'icomoon';
-			font-size: 58px;
+			font-size: 55px;
 			font-weight: 300;
-		opacity: .5;
+			opacity: .5;
+			@media screen and (min-width: 768px){
+				font-size: 58px;
+			}
 		}
 	}
 	&-prev{
@@ -83,34 +31,11 @@
 	}
 	&-item{
 		width: 617px;
-		padding: 28px;
+		padding: 15px;
+		@media screen and (min-width: 768px){
+			padding: 28px;
+		}
 	}
 }
 
-.magnifier{
-	width: 400px !important;
-	height: 400px !important;
-	left: 1200px !important;
-    top: 410px !important;
-}
 
-// .magnifier,
-// .cursorshade,
-// .statusdiv{
-// 	display: none;
-// 	@media screen and (min-width: 768px){
-// 		display: block;
-// 	}
-// }
-.price{
-	font-size: 16px;
-	font-weight: 700;
-	margin: 11px 3px 17px 0;
-	@media screen and (min-width: 420px){
-		font-size: $font-size-h4;
-	}
-	@media screen and (min-width: 960px){
-		font-size: $font-size-h3;
-		margin: 0;
-	}
-}

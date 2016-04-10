@@ -81,7 +81,11 @@ gulp.task('browser-sync', function() {
         port: 3004,
         open: true,
         browser: 'default',
+<<<<<<< HEAD
         startPath: '/index.html'
+=======
+        startPath: '/cart.html'
+>>>>>>> 52ecc85c071d1fe6e02bc01e521f58430c7968d6
     });
 });
 gulp.task('watch', function() {
