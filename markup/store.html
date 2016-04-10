@@ -9,7 +9,7 @@
 	<link href="//db.onlinewebfonts.com/c/623a4e160c7783fb2450e2fade07d883?family=Microsoft+PhagsPa" rel="stylesheet" type="text/css"/>
 </head>
 	<body>
-	<!-- <img src="pp2.jpg" class="pp" alt=""> -->
+	<img src="pp2.jpg" class="pp" alt="">
 	<!-- <img src="pp2-sm.jpg" class="pp" alt=""> -->
 		<header class="header">
 			<div class="container">
@@ -60,51 +60,57 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
-						<ul class="list list-filter">
-							<li class="h4 opener">
-								<a href="#">Men</a>
-								<ul>
-									<li>
-										<a href="#">ankle</a>
-									</li>
-									<li>
-										<a href="#">crew</a>
-									</li>
-									<li>
-										<a href="#">knee</a>
-									</li>
-								</ul>
+						<ul class="list list-filter block-area">
+							<li class="h4 opener unit">
+								<a href="#" class="frame">Men</a>
+								<div class="subslide">
+									<ul class="holder">
+										<li>
+											<a href="#">ankle</a>
+										</li>
+										<li>
+											<a href="#">crew</a>
+										</li>
+										<li>
+											<a href="#">knee</a>
+										</li>
+									</ul>
+								</div>
 							</li>
-							<li class="h4 opener">
-								<a href="#" class="active">Women</a>
-								<ul>
-									<li>
-										<a href="#" class="active">ankle</a>
-									</li>
-									<li>
-										<a href="#">crew</a>
-									</li>
-									<li>
-										<a href="#">knee</a>
-									</li>
-									<li>
-										<a href="#">over the knee</a>
-									</li>
-								</ul>
+							<li class="h4 opener unit">
+								<a href="#" class="frame">Women</a>
+								<div class="subslide">
+									<ul class="holder">
+										<li>
+											<a href="#" class="active">ankle</a>
+										</li>
+										<li>
+											<a href="#">crew</a>
+										</li>
+										<li>
+											<a href="#">knee</a>
+										</li>
+										<li>
+											<a href="#">over the knee</a>
+										</li>
+									</ul>
+								</div>
 							</li>
-							<li class="h4 opener">
-								<a href="#">Kids</a>
-								<ul>
-									<li>
-										<a href="#">crew</a>
-									</li>
-									<li>
-										<a href="#">knee</a>
-									</li>
-									<li>
-										<a href="#">over the knee</a>
-									</li>
-								</ul>
+							<li class="h4 opener unit">
+								<a href="#" class="frame">Kids</a>
+								<div class="subslide">
+									<ul class="holder">
+										<li>
+											<a href="#">crew</a>
+										</li>
+										<li>
+											<a href="#">knee</a>
+										</li>
+										<li>
+											<a href="#">over the knee</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -517,14 +523,24 @@
 			</div>
 		</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="assets/js/assets.js"></script>
-	<script>
-		$(function(){
-		$('.opener').on('click', function () {
-			 $('.opener').removeClass('open');
-			 $(this).toggleClass('open') 
-		})
-	});
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="assets/js/open-menu.js"></script>
+	<script src="assets/js/jquery.formstyler.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/owl.navigation.js"></script>
+	<script src="assets/js/zoomsl-3.0.js"></script>
+	<script src="assets/js/jquery.main.js"></script>
+	 <script>
+	 $(document).ready(function(){
+	 	$(".opener-menu").click(function(){
+				$("#open-menu").toggle();
+			});
+	 });
+	 </script>
+	
+	
+	
+	
+
 </body>
 </html>

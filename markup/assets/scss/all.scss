@@ -17,7 +17,7 @@
 @import 'modules/buttons';
 @import 'modules/breadcrumb';
 @import 'modules/page-header';
-
+@import 'modules/block-trade';
 
 
 @font-face {
@@ -33,7 +33,7 @@
 }
 .pp{
 	position: absolute;
-	top: 21px;
+	top: 11px;
 	opacity: 0.5;
 	left: 50%;
 	-webkit-transform: translateX(-50%);

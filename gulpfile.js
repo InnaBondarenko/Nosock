@@ -32,8 +32,8 @@ gulp.task('html', function() {
 });
 gulp.task('js', function() {
     return gulp.src(markupPaths.js)
-        .pipe(uglify())
-        .pipe(concat('assets.js'))
+        // .pipe(uglify())
+        // .pipe(concat('assets.js'))
         .pipe(gulp.dest('./dist/assets/js'))
          .pipe(browserSync.reload({
             stream: true
@@ -81,7 +81,7 @@ gulp.task('browser-sync', function() {
         port: 3004,
         open: true,
         browser: 'default',
-        startPath: '/cart.html'
+        startPath: '/store.html'
     });
 });
 gulp.task('watch', function() {

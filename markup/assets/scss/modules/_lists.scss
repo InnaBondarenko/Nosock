@@ -93,6 +93,7 @@ $font-size-footer-sm:			12px;
 		background: $list-bg-sm-screen;
 		margin: 0 -15px;
 		position: relative;
+		flex-wrap: wrap;
 		li{
 			margin: 0;
 			a{
@@ -102,7 +103,12 @@ $font-size-footer-sm:			12px;
 					color: $brand-color;
 				}
 			}
+			
 		}
+		.subslide{
+				width: 100%;
+				text-align: center;
+			}
 		.opener{
 			ul{
 				display: none;

@@ -126,7 +126,7 @@
 	 */
 	Navigation.Defaults = {
 		nav: false,
-		navText: [ '', '' ],
+		navText: [ 'prev', 'next' ],
 		navSpeed: false,
 		navElement: 'div',
 		navContainer: false,
