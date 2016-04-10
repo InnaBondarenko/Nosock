@@ -94,86 +94,69 @@ $font-size-footer-sm:			12px;
 		margin: 0 -15px;
 		position: relative;
 		flex-wrap: wrap;
-		li{
-			margin: 0;
-			a{
-				padding: 20px;
-				color: rgba($brand-color, .66);
-				.active{
-					color: $brand-color;
-				}
-			}
-			
-		}
-		.subslide{
-				width: 100%;
-				text-align: center;
-			}
-		.opener{
-			ul{
-				display: none;
-			}
-			&.open{
-				a{
-					color: $brand-color;
-				}
-				ul{
-					display: block;
-					position: absolute;
-					left: 0;
-					right: 0;
-					top: 100%;
-					z-index: 100;
-					background: $list-bg-sm-screen;
-					li{
-						margin-bottom: 8px;
-						text-align: center;
-						a{
-							font-weight: 400;
-							&:hover,
-							&.active{
-								text-decoration: underline;
-							}
-						}
-					}
-				}
-			}		
-		}
 		@media screen and (min-width: 960px){
 			flex-direction: column;
 			background: transparent;
 			margin: 0;
-			padding-top: 146px;
-			li{
+			
+		}
+		.opener{
+			margin: 0;
+			a{
+				padding: 20px;
+				color: rgba($brand-color, .66);
+			}
+			&.active{
 				a{
-					padding: 0;
 					color: $brand-color;
-					letter-spacing: 2px;
 				}
 			}
-			.opener{
-				margin-bottom: 55px;
-				ul{
-					display: none;
-				}
-				&.open{
-					ul{
-						position: static;
-						display: block;
-						margin-top: 10px;
-						background: transparent;
-						margin-bottom: -17px;
-						li{
-							margin-bottom: 8px;
-							text-align: left;
-							a{
-							
-							}
-						}
+			@media screen and (min-width: 960px){
+				.opener{
+					margin-bottom: 56px;
+					a{
+						padding: 0;
+						color: $brand-color;
+						letter-spacing: 2px;
 					}
-				}		
+				}
 			}
 		}
+		.subslide{
+			width: 100%;
+			text-align: center;
+			@media screen and (min-width: 960px){
+				width: auto;
+				text-align: left;
+				margin-top: -49px;
+			}
+			.holder{
+				li{
+					a{
+						display: block;
+						padding: 20px 0;
+					}
+				}
+				@media screen and (min-width: 960px){
+					margin-bottom: 46px;
+				}
+				li{
+					a{
+						padding: 0;
+						color: $brand-color;
+						letter-spacing: 2px;
+
+						&:hover,
+						&.active{
+							text-decoration: underline;
+						}
+					}
+					@media screen and (min-width: 960px){
+						margin-bottom: 6px;
+					}
+				}
+			}
+		}	
 	}
 	&-color{
 		li{

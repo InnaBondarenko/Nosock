@@ -62,8 +62,8 @@
 				// контейнер big картинки (magnifier)
 				magnifierpos: 'right',    				// сторона отображения контейнера left/right
 				magnifiersize: [0, 0], 					// размер контейнера  
-				magnifiereffectanimate: 'showIn',       // эффект появления/скрытия fadeIn/showIn/slideIn
-				innerzoom: false,						// показать контейнер внутри tmb
+				magnifiereffectanimate: 'fadeIn',       // эффект появления/скрытия fadeIn/showIn/slideIn
+				innerzoom: true,						// показать контейнер внутри tmb
 				innerzoommagnifier: false,				// показать контейнер как лупу
 				descarea: false,						// показать контейнер в произвольной области, область descarea должна иметь width и height				
 				leftoffset:  15, 						// отступ слева от tmb картинки
@@ -82,7 +82,7 @@
 				scrollspeedanimate: 5 /*4*/,		    // прокрутки big картинки
 				zoomspeedanimate: 7, 			        // зуммирования (плавность)
 				loopspeedanimate: 2.5 /*2.45342*/ ,		// перемещения области лупы и big контейнера в режиме лупы				
-				magnifierspeedanimate: 350, 		    // показа big контейнера
+				magnifierspeedanimate: 550, 		    // показа big контейнера
 
 				
 				// внешний вид
