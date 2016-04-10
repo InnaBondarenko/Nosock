@@ -97,8 +97,7 @@ $font-size-footer-sm:			12px;
 		@media screen and (min-width: 960px){
 			flex-direction: column;
 			background: transparent;
-			margin: 0;
-			
+			margin: 0;	
 		}
 		.opener{
 			margin: 0;
@@ -112,13 +111,11 @@ $font-size-footer-sm:			12px;
 				}
 			}
 			@media screen and (min-width: 960px){
-				.opener{
-					margin-bottom: 56px;
-					a{
-						padding: 0;
-						color: $brand-color;
-						letter-spacing: 2px;
-					}
+			margin-bottom: 56px;
+				a{
+					padding: 0;
+					color: $brand-color;
+					letter-spacing: 2px;
 				}
 			}
 		}
@@ -135,24 +132,24 @@ $font-size-footer-sm:			12px;
 					a{
 						display: block;
 						padding: 20px 0;
-					}
-				}
-				@media screen and (min-width: 960px){
-					margin-bottom: 46px;
-				}
-				li{
-					a{
-						padding: 0;
-						color: $brand-color;
-						letter-spacing: 2px;
-
 						&:hover,
 						&.active{
 							text-decoration: underline;
 						}
 					}
-					@media screen and (min-width: 960px){
-						margin-bottom: 6px;
+				}
+				@media screen and (min-width: 960px){
+				margin-bottom: 46px;
+					li{
+						a{
+							display: inline-block;
+							padding: 0;
+							color: $brand-color;
+							letter-spacing: 2px;	
+						}
+						@media screen and (min-width: 960px){
+							margin-bottom: 6px;
+						}
 					}
 				}
 			}
