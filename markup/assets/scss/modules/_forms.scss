@@ -54,25 +54,59 @@ $form-border: #333333;
 .form-holder{
 	padding: 40px 0 170px;
 }
+.block-form{
+	&-left{
+		.head-form{
+			transform: translate(-55px, -4px);
+			@media screen and (max-width: 1240px){
+				transform: translate(0px, 0px);
+			}
+		}
+		.form-group-holder{
+			margin-left: 10%;
+			@media screen and (max-width: 1240px) {
+				margin: 0 auto; 
+			}
+		}
+	}
+	&-right{
+		.head-form{
+			transform: translate(24px, 0px);
+			@media screen and (max-width: 1240px){
+				transform: translate(0px, 0px);
+			}
+		}
+		.form-group-holder{
+			margin-left: 20%;
+			@media screen and (max-width: 1240px) {
+				margin: 0 auto; 
+			}
+		}
+	}
+}
 .head-form {
 	text-align: center;
 	padding: 10px 20px;
-	margin-bottom: 70px;
+	margin-bottom: 80px;
+	letter-spacing: 2.5px;
 }
 .form-group-holder{
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 	transition: height 0.5s;
+	@media screen and (max-width: 1240px){
+		width: 85%;
+	}
 	@media screen and (max-width: 768px) {
 		width: 100%;
 	}
 }
 .form-group {
 	.form-group-holder & {
-		margin-bottom: 50px;
+		margin-bottom: 59px;
 	}
 	&-bottom {
-		padding-top: 12px;
+		padding-top: 4px;
 		@media screen and (max-width: 768px) {
 			box-shadow: 0 -1px 0 0 lighten($form-color-dark, 50%) inset;
 			padding: 23px 14px 17px;
@@ -86,18 +120,22 @@ $form-border: #333333;
 	background: none;
 	transition: all 0.5s;
 	outline: 0;
-
+	padding: 0;
+	@media screen and (min-width: 768px){
+		padding: 5px 0;
+	}
 	&-border {
 		@include color-shadow($form-color-dark, 18px, 16px);
 		width: 100%;
-		padding: 15px 10px 15px 0;
+		padding: 15px 10px 5px 0;
 		&:focus {
-			padding: 15px 5px;
+			padding: 15px 5px 5px;
 		}
 		@media screen and (max-width: 768px) {
-			padding: 25px 15px;
+			padding: 21px 15px 22px;
+			font-size: 13px;
 			&:focus {
-				padding: 25px 15px;
+				padding: 21px 15px 22px;
 			}
 		}
 	}
@@ -107,8 +145,15 @@ $form-border: #333333;
 		transition: all 0s;
 		box-shadow: 0px 0px 0 1px $form-color-dark;
 		height: 39px;
-		margin: 0 10px;
-		width: 35%;
+		width: 37%;
+		margin-left: 10px;
+		&~span{
+			font-size: 34px;
+			display: inline-block;
+			vertical-align: top;
+			margin-top: -5px;
+			margin-left: 11px;
+		}
 		@media screen and (max-width: 1420px) {
 			width: 30%;
 		}
@@ -119,14 +164,22 @@ $form-border: #333333;
 			width: 46px;
 			height: 28px;
 			font-size: 16px;
+			margin-left: 0;
 		}
 	}
 }
-
+.button-holder{
+	@media screen and (min-width: 768px){
+		.btn{
+			margin-left: 0;
+		}
+		text-align: center;
+	}
+}
 @media screen and (max-width: 768px) {
 	.form-holder {
 		margin: 0 -15px;
-		padding: 20px 0 0;
+		padding: 0;
 		.row {
 	    margin-left: 0;
 	    margin-right: 0;
@@ -138,7 +191,7 @@ $form-border: #333333;
 		.head-form {
 			font-size: 16px;
 			text-align: left;
-			padding: 20px 25px;
+			padding: 19px 25px;
 			background: #ebebeb;
 			cursor: pointer;
 			margin-bottom: 0;
@@ -183,6 +236,9 @@ $form-border: #333333;
 .form-inversed {
 	position: relative;
 	padding: 5px 0;
+	@media screen and (min-width: 768px){
+		padding: 0;
+	}
 	&-dark {
 		width: 130px;
 		@include form-inversed-style ($form-color-dark, 14px, 10px);
@@ -206,14 +262,21 @@ $form-border: #333333;
 	position: absolute;
 	animation: anim-search 0.5s linear both;
 	display: none;
-	top: 55px;
+	top: 100%;
+	left: auto;
 	@media screen and (max-width: 768px) {
-		top: 35px;
+		right: 100%;
+		top: 0;
+		animation: anim-search-min 0.5s linear both;
 	}
 }
 @keyframes anim-search {
 	from{transform: translateY(0);}
 	to{transform: translateY(15%);}
+}
+@keyframes anim-search-min {
+	from{transform: translateX(0);}
+	to{transform: translateX(-15%);}
 }
 
 .newsletters {
@@ -225,7 +288,5 @@ $form-border: #333333;
 		width: 80%;
 		margin: 0 auto;
 	}
-	h4{
-		text-align: center;
-	}
+	
 }

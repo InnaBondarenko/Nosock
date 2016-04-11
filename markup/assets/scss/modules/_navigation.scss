@@ -1,9 +1,9 @@
 $opener-color: #1d1d1b;
 
 .header{
-	padding: 20px 0 19px;
+	padding: 20px 0 23px;
 	@media screen and (min-width: 768px){
-		padding: 62px 0 60px;
+		padding: 54px 0 54px;
 	}
 	&-holder{
 		display: flex;
@@ -18,8 +18,6 @@ $opener-color: #1d1d1b;
 		flex-direction: column;
 		&-column{
 			width: auto;
-			margin-bottom: 25px;
-			margin-left: 65px;
 			@media screen and (min-width: 769px){
 				width: 19%;
 				margin-bottom: 0;
@@ -60,6 +58,10 @@ $opener-color: #1d1d1b;
 	}
 	.list{
 		align-self: flex-end;
+		margin-right: 10px;
+		@media screen and (min-width: 768px){
+			margin-right: 0;
+		}
 	}
 }
 .main-nav{

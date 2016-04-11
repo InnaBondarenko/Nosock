@@ -9,7 +9,7 @@ function initServices() {
 	var animSpeed = 300;
 	var win = jQuery(window);
 
-	jQuery('.service-area').each(function() {
+	jQuery('.block-area').each(function() {
 		var holder = jQuery(this);
 		var items = holder.find('.unit').each(function() {
 			var unit = jQuery(this);

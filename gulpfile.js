@@ -81,7 +81,7 @@ gulp.task('browser-sync', function() {
         port: 3004,
         open: true,
         browser: 'default',
-        startPath: '/product.html'
+        startPath: '/index.html'
     });
 });
 gulp.task('watch', function() {

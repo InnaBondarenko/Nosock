@@ -1,5 +1,5 @@
- $breadcrumb-color:    #6c6c6c;
- $breadcrumb-fz:       18px;
+ $breadcrumb-color:    rgba($brand-color, .78);
+ $breadcrumb-fz:       19px;
  $breadcrumb-margin:     3px;
  $breadcrumb-letter-spacing:    0.7px;
 
@@ -7,7 +7,7 @@
 .breadcrumb {
   list-style-type: none;
   font-size: 0;
-   @media screen and (max-width: 768px){
+   @media screen and (max-width: 960px){
         display: none;
       }
   li {
