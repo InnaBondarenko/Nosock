@@ -10,14 +10,11 @@
 	}
 }
 .block-lookbook{
-	padding-top: 19px;
 	padding-bottom: 38px;
 	@media screen and (min-width: 768px){
 		padding-bottom: 50px;
-		padding-top: 50px;
 	}
 	@media screen and (min-width: 960px){
-		padding-top: 139px;
 		padding-bottom: 172px;
 	}
 	h1{
@@ -36,30 +33,92 @@
 	}
 }
 .breadcrumb{
-	margin-top: 52px;
-}
-.block-products{
-	margin-bottom: 118px;
+	margin-top: 54px;
 }
 #pagination{
 	margin-bottom: 165px;
 }
+.main-lookbook{
+	.intro{
+		margin-bottom: 19px;
+		@media screen and (min-width: 768px){
+			margin-bottom: 50px;
+		}
+		@media screen and (min-width: 960px){
+			margin-bottom: 131px;
+		}
+	}
+}
 .main-store{
 	.breadcrumb{
-		margin-top: 52px;
 		margin-bottom: 78px;
 	}
+	.list-filter{
+		margin-top: -4px;
+		@media screen and (min-width: 768px){
+			margin-bottom: 20px;
+			margin-top: 0;
+		}
+		@media screen and (min-width: 960px){
+			margin-bottom: 0;
+		}
+	}
 	.block-products{
-		margin-bottom: 118px;
+		margin-bottom: 50px;
+		@media screen and (min-width: 768px){
+			margin-bottom: 118px;		
+		}
+		.list-icons{
+			justify-content: flex-end;
+			li{
+				&:first-child{
+					a{
+						margin-left: 0;
+					}
+				}
+				a{
+					margin-left: 11px;
+					margin-right: 19px;
+				}
+			}
+			@media screen and (min-width: 420px){
+				justify-content: center;
+				li{
+					a{
+						margin-left: 40px;
+						margin-right: 0;
+					}
+				}
+			}
+		}
 	}
 	#pagination{
 		margin-bottom: 165px;
 	}
 }
+.main-product{
+	.list-filter{
+		margin-top: -4px;
+		margin-bottom: 30px;
+		@media screen and (min-width: 960px){
+			margin-top: 70px;
+			margin-bottom: 0;
+		}
+	}
+	.block-options{
+		margin-bottom: 26px;
+		@media screen and (min-width: 960px){
+			margin-bottom: 166px;
+		}
+	}
+}
 .main-cartlist{
+	@media screen and (min-width: 960px){
+		padding-top: 55px;
+	}
 	.page-header{
 		margin-bottom: 6px;
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 960px){
 			margin-bottom: 58px;
 		}
 	}
@@ -83,12 +142,34 @@
 	.btn-holder{
 		text-align: center;
 		margin-bottom: 40px;
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 960px){
 			text-align: right;
 			padding-right: 131px;
 			margin-bottom: 172px;
 		}
 	}
+}
+.main-wishlist{
+	@media screen and (min-width: 960px){
+		padding-top: 55px;
+	}
+	.page-header{
+		margin-bottom: 4px;
+		@media screen and (min-width: 960px){
+			margin-bottom: 60px;
+		}
+		.h2{
+			@media screen and (min-width: 960px){
+				margin-left: 66px;
+			}
+		}
+	}
+	.block-wish{
+		margin-bottom: 15px;
+		@media screen and (min-width: 960px){
+			margin-bottom: 170px;
+		}
+	}	
 }
 .footer{
 	background: $brand-color;
@@ -121,13 +202,47 @@
 				margin: 0;
 				justify-content: flex-start;
 			}
+			@media screen and (min-width: 1240px){
+				margin-left: -13px;
+			}
+		}
+		.newsletters{
+			margin-top: 33px;
+			@media screen and (min-width: 768px){
+				margin-top: 0px;
+			}
+			@media screen and (min-width: 1240px){
+				margin-top: 14px;
+			}
+			h4{
+				text-align: center;
+				margin-top: 3px;
+				letter-spacing: 1.5px;
+				font-size: 13px;
+				margin-bottom: 13px;
+				@media screen and (min-width: 768px){
+					font-size: 18px;
+					letter-spacing: 2.5px;
+					margin-bottom: 10px;
+				}
+			}
+			.form-group{
+				@media screen and (min-width: 960px){
+					margin-right: 10px;
+				}
+			}
 		}
 		.list-social{
 			margin-top: 20px;
+			margin-bottom: 18px;
 			justify-content: center;
 			@media screen and (min-width: 768px){
+				justify-content: center;
+				margin-bottom: 0;
+			}
+			@media screen and (min-width: 1240px){
 				justify-content: flex-end;
-				margin-right: -5px;
+				margin-right: -22px;
 				margin-top: 17px;
 			}
 		}
@@ -136,6 +251,7 @@
 		font-size: 11px;
 		color: rgba($text-inverse-color, .3);
 		font-weight: 700;
+		letter-spacing: 1.5px;
 		span{
 			display: none;
 		}

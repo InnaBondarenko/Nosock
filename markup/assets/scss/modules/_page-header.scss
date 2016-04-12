@@ -1,24 +1,32 @@
 .page-header{
-	 padding:10px 0 14px 0;
+	 padding:19px 0 14px 0;
 	 .h2{
 	 	font-size: 24px;
 		color: $brand-color;
 		letter-spacing: 2px;
 		margin: 0;
+		@media screen and (max-width: 960px){
+			font-size: 20px;
+		}
 		[class*="icon-"]{
 			padding-right: 35px;
 			font-size: 22px;
 			@media screen and (max-width: 320px){
-				padding-right: 22px;
+				padding-right: 12px;
 				letter-spacing: 1px;
+				font-size: 18px;
     		}
 		}
 	 }
-	@media screen and (max-width: 320px){
+	@media screen and (max-width: 960px){
 		background: #ebebeb;
 		margin: 0px -15px;
 	}
 	&-lg{
+		padding:10px 0 14px 0;
+		@media screen and (max-width: 960px){
+			font-size: 24px;
+		}
 		.h2{
 			[class*="icon-"]{
 				font-size: 29px;

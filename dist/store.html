@@ -25,22 +25,30 @@
 							<ul id="open-menu" class="nav">
 								<li><a href="index.html">About</a></li>
 								<li><a href="store.html">Store</a></li>
-								<li><a href="product.html">Lookbook</a></li>
+								<li><a href="index.html">Lookbook</a></li>
 								<li><a href="contact.html">Contact</a></li>
-								<li><a href="#">Login</a></li>
+								<li><a href="contact.html">Login</a></li>
 							</ul>
 						</nav>
 					</div>
 					<div class="header-inner header-inner-column">
 						<ul class="list list-icons">
 							<li>
-								<a href=""><i class="icon-search"></i></a>
+								<a href="#">
+									<i class="icon-search" ></i>
+									<form action="" id="search">
+										<div class="form-group form-inversed form-inversed-dark">
+											<input class="form-control" type="text" placeholder="search">
+											<button class="icon-arrow-right" type="submit"></button>
+										</div>
+									</form>
+								</a>
 							</li>
 							<li>
-								<a href=""><i class="icon-heart"></i></a>
+								<a href="wishlist.html"><i class="icon-heart"></i></a>
 							</li>
 							<li>
-								<a href="" class="bage" data-count="1"><i class="icon-cart"></i></a>
+								<a href="cart.html" class="bage" data-count="1"><i class="icon-cart"></i></a>
 							</li>
 						</ul>
 					</div>
@@ -60,51 +68,57 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
-						<ul class="list list-filter">
-							<li class="h4 opener">
-								<a href="#">Men</a>
-								<ul>
-									<li>
-										<a href="#">ankle</a>
-									</li>
-									<li>
-										<a href="#">crew</a>
-									</li>
-									<li>
-										<a href="#">knee</a>
-									</li>
-								</ul>
+						<ul class="list list-filter block-area">
+							<li class="h4 opener unit">
+								<a href="#" class="frame">Men</a>
+								<div class="subslide">
+									<ul class="holder">
+										<li>
+											<a href="#">ankle</a>
+										</li>
+										<li>
+											<a href="#">crew</a>
+										</li>
+										<li>
+											<a href="#">knee</a>
+										</li>
+									</ul>
+								</div>
 							</li>
-							<li class="h4 opener">
-								<a href="#" class="active">Women</a>
-								<ul>
-									<li>
-										<a href="#" class="active">ankle</a>
-									</li>
-									<li>
-										<a href="#">crew</a>
-									</li>
-									<li>
-										<a href="#">knee</a>
-									</li>
-									<li>
-										<a href="#">over the knee</a>
-									</li>
-								</ul>
+							<li class="h4 opener unit">
+								<a href="#" class="frame">Women</a>
+								<div class="subslide">
+									<ul class="holder">
+										<li>
+											<a href="#" class="active">ankle</a>
+										</li>
+										<li>
+											<a href="#">crew</a>
+										</li>
+										<li>
+											<a href="#">knee</a>
+										</li>
+										<li>
+											<a href="#">over the knee</a>
+										</li>
+									</ul>
+								</div>
 							</li>
-							<li class="h4 opener">
-								<a href="#">Kids</a>
-								<ul>
-									<li>
-										<a href="#">crew</a>
-									</li>
-									<li>
-										<a href="#">knee</a>
-									</li>
-									<li>
-										<a href="#">over the knee</a>
-									</li>
-								</ul>
+							<li class="h4 opener unit">
+								<a href="#" class="frame">Kids</a>
+								<div class="subslide">
+									<ul class="holder">
+										<li>
+											<a href="#">crew</a>
+										</li>
+										<li>
+											<a href="#">knee</a>
+										</li>
+										<li>
+											<a href="#">over the knee</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -463,7 +477,7 @@
 			<div class="container">
 				<div class="footer-inner">
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
 							<ul class="list list-footer">
 								<li>
 									<a href="#">About</a>
@@ -485,12 +499,24 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-							<!-- <div class="test">
-								
-							</div> -->
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5">
+							<div class="newsletters">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-lg-push-2">
+										<h4>Newsletters</h4>							
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-lg-push-2">
+										<form action="">
+											<div class="form-group form-inversed form-inversed-light">
+												<input class="form-control" type="text" placeholder="E-mail">
+												<button class="icon-arrow-right" type="submit"></button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
 							<ul class="list list-social">
 								<li>
 									<a href="#"><i class="icon-social-facebook"></i></a>
@@ -517,14 +543,19 @@
 			</div>
 		</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="assets/js/assets.js"></script>
+
+	<script src="assets/js/open-menu.js"></script>
+	<script src="assets/js/jquery.main.js"></script>
+	<script src="assets/js/pagination.js"></script>
 	<script>
-		$(function(){
-		$('.opener').on('click', function () {
-			 $('.opener').removeClass('open');
-			 $(this).toggleClass('open') 
-		})
-	});
-	</script>
+			$(document).ready(function(){
+			$(".opener-menu").click(function(){
+				$("#open-menu").toggle();
+			});
+			$(".icon-search").click(function(){
+				$("#search").toggle();
+			});
+		});
+	</script>	
 </body>
 </html>
