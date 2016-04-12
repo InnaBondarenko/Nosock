@@ -110,14 +110,17 @@
 			}
 		}
 		.image-holder{
+			overflow: hidden;
 			margin-top: 0;
 			position: relative;
 			padding-bottom: 36px;
+			width: 100%;
 			img{
 				transform: translate(-42px, 44px);
 				transition: transform 0.25s;
 				transition-delay: 0.25s;
 				width: 100%;
+				height: auto;
 
 			}
 		}

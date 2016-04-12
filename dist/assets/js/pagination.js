@@ -111,11 +111,11 @@ var Pagination = {
     // --------------------
 
     // binding buttons
-    Buttons: function(e) {
-        var nav = e.getElementsByTagName('a');
-        nav[0].addEventListener('click', false);
-        nav[1].addEventListener('click', false);
-    },
+    // Buttons: function(e) {
+    //     var nav = e.getElementsByTagName('a');
+    //     nav[0].addEventListener('click', false);
+    //     nav[1].addEventListener('click', false);
+    // },
 
     // create skeleton
     Create: function(e) {
@@ -128,7 +128,7 @@ var Pagination = {
 
         e.innerHTML = html.join('');
         Pagination.e = e.getElementsByTagName('span')[0];
-        Pagination.Buttons(e);
+        // Pagination.Buttons(e);
     },
 
     // init
