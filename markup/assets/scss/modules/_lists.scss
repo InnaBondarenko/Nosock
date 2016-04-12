@@ -61,6 +61,7 @@ $font-size-footer-sm:			12px;
 			a{
 				margin-left: 16px;
 				position: relative;
+				z-index: 10;
 				@media screen and (min-width: 768px){
 					margin-left: 38px;
 				}

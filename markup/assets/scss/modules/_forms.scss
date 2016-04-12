@@ -262,10 +262,10 @@ $form-border: #333333;
 	position: absolute;
 	animation: anim-search 0.5s linear both;
 	display: none;
-	top: 100%;
-	left: auto;
+	top: 70%;
+	right: 22px;
 	@media screen and (max-width: 768px) {
-		right: 100%;
+		right: 98px;
 		top: 0;
 		animation: anim-search-min 0.5s linear both;
 	}
