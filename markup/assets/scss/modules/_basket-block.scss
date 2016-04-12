@@ -12,6 +12,9 @@ $basket-border-color:   #000;
 		display: none;
 		&+.basket-block{
 			box-shadow: none;
+			@media screen and (min-width: 960px){
+				box-shadow: 0 -1px 0 0 $basket-border-color;
+			}
 		}
 		&+.basket-block-total{
 			box-shadow: 0 -1px 0 0 $basket-border-color,
