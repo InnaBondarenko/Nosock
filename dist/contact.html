@@ -12,7 +12,7 @@
 		<div class="container">
 			<div class="header-holder">
 				<div class="header-inner header-inner-column">
-					<a href="#" class="logo"><span class="icon-logo"></span></a>
+					<a href="index.html" class="logo"><span class="icon-logo"></span></a>
 				</div>
 				<div class="header-inner header-inner-center">
 					<nav class="main-nav">
@@ -64,13 +64,13 @@
 						<h3 class="head-form head-form-left active" onclick="clickHead(this);">Personal Detail</h3>
 						<div class="form-group-holder">
 							<div class="form-group">
-								<input class="form-control form-control-border" type="text" placeholder="name">
+								<input class="form-control form-control-border" required type="text" placeholder="name">
 							</div>
 							<div class="form-group">
-								<input class="form-control form-control-border" type="email" placeholder="e-mail">
+								<input class="form-control form-control-border" required type="email" placeholder="e-mail">
 							</div>
 							<div class="form-group">
-								<input class="form-control form-control-border" type="tel" placeholder="phone number">
+								<input class="form-control form-control-border" required type="tel" placeholder="phone number">
 							</div>
 						</div>
 					</div>
@@ -81,16 +81,16 @@
 						<h3 class="head-form" onclick="clickHead(this);">Billing Address</h3>
 						<div class="form-group-holder">
 							<div class="form-group">
-								<input class="form-control form-control-border form-control-media" type="text" placeholder="line">
+								<input class="form-control form-control-border form-control-media" required type="text" placeholder="line">
 							</div>
 							<div class="form-group">
-								<input class="form-control form-control-border" type="text" placeholder="town">
+								<input class="form-control form-control-border" required type="text" placeholder="town">
 							</div>
 							<div class="form-group">
-								<input class="form-control form-control-border" type="text" placeholder="country">
+								<input class="form-control form-control-border" required type="text" placeholder="country">
 							</div>
 							<div class="form-group">
-								<input class="form-control form-control-border" type="text" placeholder="code">
+								<input class="form-control form-control-border" required type="text" placeholder="code">
 							</div>
 						</div>
 					</div>
@@ -101,10 +101,10 @@
 						<h3 class="head-form" onclick="clickHead(this);">Payment Details</h3>
 						<div class="form-group-holder">
 							<div class="form-group">
-								<input class="form-control form-control-border" type="text" placeholder="name">
+								<input class="form-control form-control-border" required type="text" placeholder="name">
 							</div>
 							<div class="form-group">
-								<input class="form-control form-control-border" type="text" placeholder="card No">
+								<input class="form-control form-control-border" required type="text" placeholder="card No">
 							</div>
 							<div class="form-group form-group-bottom">
 								<div class="row">
@@ -112,7 +112,7 @@
 										<label for="code">code</label>
 									</div>
 									<div class="col-xs-8 col-sm-9 col-md-8 col-lg-8">
-										<input class="form-control form-control-sm" id="code" type="text">
+										<input class="form-control form-control-sm" required id="code" type="text">
 									</div>
 								</div>
 							</div>
@@ -122,9 +122,9 @@
 										<label for="exp-data">exp data</label>
 									</div>
 									<div class="col-xs-8 col-sm-9 col-md-8 col-lg-8">
-										<input class="form-control form-control-sm" id="exp-data" type="text">
+										<input class="form-control form-control-sm" required id="exp-data" type="text">
 										<span>/</span>
-										<input class="form-control form-control-sm" id="exp-data1" type="text">
+										<input class="form-control form-control-sm" required id="exp-data1" type="text">
 									</div>
 								</div>
 							</div>
@@ -183,7 +183,7 @@
 								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-lg-push-2">
 									<form action="#">
 										<div class="form-group form-inversed form-inversed-light">
-											<input class="form-control" type="text" placeholder="E-mail">
+											<input class="form-control" required type="text" placeholder="E-mail">
 											<button class="icon-arrow-right" type="submit"></button>
 										</div>
 									</form>
